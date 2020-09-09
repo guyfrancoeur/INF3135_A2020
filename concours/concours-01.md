@@ -1,6 +1,6 @@
 ## Concours procédure pour assister à une réunion zoom
 
-[![Maintenance](https://img.shields.io/badge/Active%3F-Yes-orange.svg)](https://github.com/guyfrancoeur/ciclad/blob/master/README.md)
+[![Maintenance](https://img.shields.io/badge/Active%3F-Non-orange.svg)](https://github.com/guyfrancoeur/ciclad/blob/master/README.md)
 
 Je donne un bonus aux 2 premiers étudiants de chaque groupe qui peuvent produire
 une procédure (marche à suivre) à l’aide du langage Markdown (de GitHub).
