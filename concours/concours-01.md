@@ -2,6 +2,11 @@
 
 [![Maintenance](https://img.shields.io/badge/Active%3F-Non-orange.svg)](https://github.com/guyfrancoeur/ciclad/blob/master/README.md)
 
+Bravo aux particiapants il y a eu plusieurs.
+
+### Tableau d'honneur temporaire (il y aura un plus beau éventuellement): 
+  - `Shanie`, `Pedro Luis`, `Kousseyla` et `Nami`
+
 Je donne un bonus aux 2 premiers étudiants de chaque groupe qui peuvent produire
 une procédure (marche à suivre) à l’aide du langage Markdown (de GitHub).
 Votre solution explique comment se connecter aux réunions (meeting) zoom pour le cours INF3135.
@@ -11,7 +16,7 @@ couvrir les différentes façons de faire. Je ne crois pas qu’il y ait plus de
 Cette procédure sera utilisée pour aider les personnes qui n’arrivent pas à connecter zoom (6% du monde).
 
 Je vais évaluer quelques (pas toutes) solutions proposées :
--	Complete
+-	Complète
 -	Facile
 -	Claire
 -	Simple
@@ -19,7 +24,7 @@ Je vais évaluer quelques (pas toutes) solutions proposées :
 
 Je désire recevoir votre solution sous la forme suivante : 
 -	Lien (URL) vers votre dépôt GitHub pour que je puisse consulter votre proposition.
--	Votre titre de courriel (exemple): GROUPE : 20 – FRAG01018400 (je consens que la solution est libre de droits)
+-	Votre titre de courriel (exemple): GROUPE : 20 – FRAG01018400 (je consens `ou pas` que la solution est libre de droits)
 
 Par la suite, je vais VOLER (prendre) votre solution si elle est retenue. Elle doit être libre de droits.
 
