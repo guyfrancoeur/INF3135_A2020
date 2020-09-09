@@ -1,4 +1,4 @@
-## Procédure de connection à Zoom (par FRES du groupe 40)
+## Procédure de connexion à Zoom (par FRES du groupe 40)
 
 ###### Pour ce connecter via Zoom au cours INF3135 voici quelques marches à suivre et méthodes possibles
 
