@@ -8,7 +8,7 @@
 
 [https://zoom.us/signup](https://zoom.us/signup)
 
-1.2 Pour pouvoir acéder au cours en ligne le jeudi à 13h30, utiliser le liens ci-dessous
+1.2 Pour pouvoir acéder au cours en ligne le `jeudi à 13h30`, utiliser le liens ci-dessous
 
 [https://uqam.zoom.us/j/98238593038?pwd=YTA3b21OUVlhSmJCWm4zMHAxc05Vdz09](https://uqam.zoom.us/j/98238593038?pwd=YTA3b21OUVlhSmJCWm4zMHAxc05Vdz09)
 
@@ -30,13 +30,13 @@
 
  [Lien pour Calendrier](https://uqam.zoom.us/meeting/tJwvdOGtpzgqGdzfMvckWGSzRXchGX6FBB5O/ics?icsToken=98tyKuCgrDgiH92WsBqPRow-AIjCWe_xmHZfjadHmjLzACtkRTDsBNpBOpVHRv7y)
 
-3.2 Suivre les étapes de la méthode 1 
+3.2 Suivre les étapes de la méthode 1
 
-### Attention : 
+### Attention :
 
-Si vous n'avez pas l'application Zoom 
+Si vous n'avez pas l'application Zoom
 
-Il est possible de l'ouvrire dans votre navigateur Web. 
+Il est possible de l'ouvrire dans votre navigateur Web.
 
 ![Photo](./fres.jpg)
 
