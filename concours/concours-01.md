@@ -1,4 +1,4 @@
-## Concours procédure pour assiter à un réunion zoom
+## Concours procédure pour assister à une réunion zoom
 
 [![Maintenance](https://img.shields.io/badge/Active%3F-Yes-orange.svg)](https://github.com/guyfrancoeur/ciclad/blob/master/README.md)
 
