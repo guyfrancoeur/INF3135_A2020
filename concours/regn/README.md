@@ -1,4 +1,4 @@
-## Procédure de connection à Zoom (par REGN du groupe 40)
+## Procédure de connexion à Zoom (par REGN du groupe 40)
 
 *Étape #1* : **Avoir un compte valide** 
 
