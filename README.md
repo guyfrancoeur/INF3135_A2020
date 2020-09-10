@@ -11,6 +11,14 @@
 - Travail 2 20% : en 2020
 - Travail 3 20% : en 2020
 
+Les règlements concernant le plagiat seront strictement appliqués. 
+Pour plus de renseignements, consultez le site suivant : http://www.sciences.uqam.ca/etudiants/integrite-academique.html
+
+##### Points bonus (max 4) :
+ + Il est possible d'obtenir des points pour des contributions extraordinaires;
+ + Sur une base volontaire;
+ + Les points bonus sont à mon entière discrétion.
+ 
 ##### Directives aux examens
  + Avoir votre carte d'étudiant UQAM valide;
  + L'examen à faire seul sans aucune aide-externe;
@@ -22,8 +30,14 @@
  + Vous avez trois (3) heures;
  + WebCamera et micro actif durant toute la durée de l'examen.
  + ~~**Signez la feuille de présence avant votre départ.**~~
+
+##### Directives des travaux :
+ + Remise électronique **privé** via GitHub.com;
+ + Travaux à faire individuellement;
+ + La qualité du français sera prise en considération (jusqu’à 10% de pénalité).
  
-#### Cours:
+#### Contenu du cours :
+Le contenu du cours sera divisé comme suit:
 - Chapitre 1 environnement
 - Chapitre 2 base du langage C
 - Chapitre 3 compilation et automatisation
