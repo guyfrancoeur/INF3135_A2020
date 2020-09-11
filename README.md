@@ -16,12 +16,15 @@ Pour plus de renseignements, consultez le site suivant : http://www.sciences.uqa
 
 ##### Points bonus (max 4) :
  + Il est possible d'obtenir des points pour des contributions extraordinaires;
+   - Vous rendez le cours meilleur. Vous rendez vos collègues meilleurs;
+   - En classe, détection de (coquilles ou erratums), concours spontané;
  + Sur une base volontaire;
- + Les points bonus sont à mon entière discrétion.
+ + Les points bonus sont à mon entière discrétion;
+ + Il faut comprendre que c'est une petite récompense durant une session éprouvante. C'est mon moyen de vous dire merci.
  
 ##### Directives aux examens
  + Avoir votre carte d'étudiant UQAM valide;
- + L'examen à faire seul sans aucune aide-externe;
+ + L'examen à faire seul sans aucune aide externe;
  + Vous ne pouvez pas collaborer avec un partenaire;
  + Vous ne pouvez pas prendre les notes personnelles d'un voisin;
  + Bien lire les questions;
@@ -59,18 +62,23 @@ Le contenu du cours sera divisé comme suit:
 + Il est rare que les réponses soient offertes. Cette méthode n'est pas pédagogique.
 + Nous allons plutôt débattre et dialoguer sur nos approches respectives.
 
-#### Linux
+#### Communication
+ + ListServ est utilisé pour les communications aux groupes;
+ + Vous devez `toujours` utiliser votre courriel UQAM lors de vos communications avec moi;
+ + ListServ UQAM fonctionne uniquement avec le courriel UQAM.
+ + [Vérifier vos abonnements aux listes](https://listserv.uqam.ca)
 
+#### Conclusion
 Le langage C est intimement lié au système d'exploitation Unix (et vice versa).  Aujourd'hui nous 
 parlons de Linux un `OS`, en anglais, qui est stable et performant.  `Linux` et `Bash` seront vus
 et sont nécessaires pour l'accomplissement de tâches dans le cadre de ce cours.
-
 
 Le matériel sera mis à jour sur une base régulière.
 
 Merci, bonne session à tous.
 
 Guy Francoeur
+
 
 #### Référence: 
 
