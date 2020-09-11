@@ -11,8 +11,13 @@
 - Travail 2 20% : en 2020
 - Travail 3 20% : en 2020
 
+L'étudiant doit obtenir 50%+ dans les examens `et` 50%+ des les travaux afin réussir le cours. Dans le cas contraire l'échec sera attribué
+
 Les règlements concernant le plagiat seront strictement appliqués. 
 Pour plus de renseignements, consultez le site suivant : http://www.sciences.uqam.ca/etudiants/integrite-academique.html
+
+### Entente d'évaluation
+ - L'entente d'évaluation est un document officiel qui contient les modalités d'évaluations retenues.
 
 ##### Points bonus (max 4) :
  + Il est possible d'obtenir des points pour des contributions extraordinaires;
@@ -32,7 +37,7 @@ Pour plus de renseignements, consultez le site suivant : http://www.sciences.uqa
  + Répondre dans les espaces prévus;
  + Vous avez trois (3) heures;
  + WebCamera et micro actif durant toute la durée de l'examen.
- + ~~**Signez la feuille de présence avant votre départ.**~~
+ + **Signez la feuille de présence avant votre départ, si appliocable.**
 
 ##### Directives des travaux :
  + Remise électronique **privé** via GitHub.com;
