@@ -4,6 +4,8 @@
 
 ### Matériel du cours INF3135 édition A2020
 
+- [Plan de cours PDF](http://info.uqam.ca/plan_cours/Automne%202020/INF3135.pdf)
+
 ### Dates importantes:
 - Examen #1 25% : 31 octobre 2020 09h30 HE durée 3h
 - Examen #2 25% : 19 décembre 2020 09h30 HE durée 3h
@@ -14,7 +16,7 @@
 L'étudiant doit obtenir 50%+ dans les examens `et` 50%+ des les travaux afin réussir le cours. Dans le cas contraire l'échec sera attribué
 
 Les règlements concernant le plagiat seront strictement appliqués. 
-Pour plus de renseignements, consultez le site suivant : http://www.sciences.uqam.ca/etudiants/integrite-academique.html
+Pour plus de renseignements, consultez le site suivant : http://www.infosphere.uqam.ca/rediger-un-travail/eviter-plagiat
 
 ### Entente d'évaluation
  - L'entente d'évaluation est un document officiel qui contient les modalités d'évaluations retenues.
@@ -36,7 +38,7 @@ Pour plus de renseignements, consultez le site suivant : http://www.sciences.uqa
  + Vous devez réfléchir avant de répondre;
  + Répondre dans les espaces prévus;
  + Vous avez trois (3) heures;
- + WebCamera et micro actif durant toute la durée de l'examen.
+ + WebCamera et micro actif durant toute la durée de l'examen;
  + **Signez la feuille de présence avant votre départ, si appliocable.**
 
 ##### Directives des travaux :
@@ -63,15 +65,15 @@ Le contenu du cours sera divisé comme suit:
 #### Ateliers (laboratoires) :
 + Les ateliers concernent la matière vue;
 + Ne pas prendre de retard dans vos devoirs;
-+ Les ateliers sont à faire seul en autodidacte à raison de 2h semaine.
-+ Il est rare que les réponses soient offertes. Cette méthode n'est pas pédagogique.
++ Les ateliers sont à faire seul en autodidacte à raison de 2h semaine;
++ Il est rare que les réponses soient offertes. Cette méthode n'est pas pédagogique;
 + Nous allons plutôt débattre et dialoguer sur nos approches respectives.
 
 #### Communication
  + ListServ est utilisé pour les communications aux groupes;
  + Vous devez `toujours` utiliser votre courriel UQAM lors de vos communications avec moi;
- + ListServ UQAM fonctionne uniquement avec le courriel UQAM.
- + [Vérifier vos abonnements aux listes](https://listserv.uqam.ca)
+ + ListServ UQAM fonctionne uniquement avec le courriel UQAM;
+ + [Vérifier vos abonnements aux listes](https://listserv.uqam.ca).
 
 #### Conclusion
 Le langage C est intimement lié au système d'exploitation Unix (et vice versa).  Aujourd'hui nous 
