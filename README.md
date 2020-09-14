@@ -39,7 +39,7 @@ Pour plus de renseignements, consultez le site suivant : http://www.infosphere.u
  + Répondre dans les espaces prévus;
  + Vous avez trois (3) heures;
  + WebCamera et micro actif durant toute la durée de l'examen;
- + **Signez la feuille de présence avant votre départ, si appliocable.**
+ + **Signez la feuille de présence avant votre départ, si applicable.**
 
 ##### Directives des travaux :
  + Remise électronique **privé** via GitHub.com;
@@ -73,7 +73,7 @@ Le contenu du cours sera divisé comme suit:
  + ListServ est utilisé pour les communications aux groupes;
  + Vous devez `toujours` utiliser votre courriel UQAM lors de vos communications avec moi;
  + ListServ UQAM fonctionne uniquement avec le courriel UQAM;
- + [Vérifier vos abonnements aux listes](https://listserv.uqam.ca).
+ + ~~[Vérifier vos abonnements aux listes](https://listserv.uqam.ca).~~ il y a des problèmes de visuel avec ceci.
 
 #### Conclusion
 Le langage C est intimement lié au système d'exploitation Unix (et vice versa).  Aujourd'hui nous 
