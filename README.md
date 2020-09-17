@@ -7,11 +7,13 @@
 - [Plan de cours PDF](http://info.uqam.ca/plan_cours/Automne%202020/INF3135.pdf)
 
 ### Dates importantes:
-- Examen #1 25% : 31 octobre 2020 09h30 HE durée 3h
-- Examen #2 25% : 19 décembre 2020 09h30 HE durée 3h
-- Travail 1 10% : en 2020
-- Travail 2 20% : en 2020
-- Travail 3 20% : en 2020
+ | Livrable     | Pondération  | Date                                        |
+ |:-------------|:------------:|:--------------------------------------------|
+ | Examen intra | 25%   | 31 octobre 2020 09h30 HE                    |
+ | Examen final | 25%   | 19 décembre 2020 09h30 HE                   |
+ | Travail 1    | 10%   | 18 octobre 2020 23h59 HE (Québec)           |
+ | Travail 2    | 20%   | 22 novembre 2020 23h59 HE (Québec)          |
+ | Travail 3    | 20%   | 20 décembre 2020 23h59 HE (Québec)          |
 
 L'étudiant doit obtenir 50%+ dans les examens `et` 50%+ des les travaux afin réussir le cours. Dans le cas contraire l'échec sera attribué
 
@@ -73,7 +75,12 @@ Le contenu du cours sera divisé comme suit:
  + ListServ est utilisé pour les communications aux groupes;
  + Vous devez `toujours` utiliser votre courriel UQAM lors de vos communications avec moi;
  + ListServ UQAM fonctionne uniquement avec le courriel UQAM;
- + ~~[Vérifier vos abonnements aux listes](https://listserv.uqam.ca).~~ il y a des problèmes de visuel avec ceci.
+ + ~~[Vérifier vos abonnements aux listes](https://listserv.uqam.ca).~~ il y a des problèmes de visuel avec ceci, semble imcomplet.
+
+#### Droits d'auteur
+Le matériel de ce cours est une oeuvre qui est régie par le droit d'auteur.  Un droit usage et de consultation, `pas la distribution, ni la modification`, 
+du matériel est autorisé pour la durée de la session à laquelle l'étudiant est inscrit au cours.  À la fin de la session les `fork` devront être détruit.
+De façon générale, l'usage de `fork` pour consulter le matériel de cours n'est pas nécessaire.
 
 #### Conclusion
 Le langage C est intimement lié au système d'exploitation Unix (et vice versa).  Aujourd'hui nous 
