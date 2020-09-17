@@ -78,9 +78,9 @@ Le contenu du cours sera divisé comme suit:
  + ~~[Vérifier vos abonnements aux listes](https://listserv.uqam.ca).~~ il y a des problèmes de visuel avec ceci, semble imcomplet.
 
 #### Droits d'auteur
-Le matériel de ce cours est une oeuvre qui est régie par le droit d'auteur.  Un droit d'usage et de consultation individuel, `pas la distribution, ni la modification`, 
-du matériel est autorisé pour la durée de la session à laquelle l'étudiant est inscrit au cours.  À la fin de la session les `fork` devront être détruit.
-De façon générale, l'usage de `fork` pour consulter le matériel de cours n'est pas nécessaire.
+Le matériel de ce cours est une oeuvre qui est régie par le droit d'auteur.  Un droit de lecture, d'utilisation et de consultation individuel, 
+`pas la distribution, ni la modification`, du matériel est autorisé pour la durée de la session à laquelle l'étudiant est inscrit au cours.  
+À la fin de la session les `fork` devront être détruit.  De façon générale, l'usage de `fork` pour consulter le matériel de cours n'est pas nécessaire.
 
 #### Conclusion
 Le langage C est intimement lié au système d'exploitation Unix (et vice versa).  Aujourd'hui nous 
