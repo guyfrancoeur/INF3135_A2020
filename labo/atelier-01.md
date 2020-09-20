@@ -145,7 +145,23 @@ pour changer de répertoire, essayez ceci :
 + Effacer le fichier `output.md`
 + Quelle commande simple aurait pue être utilisée au lieu des deux dernières ?
 
-## 3b - Commandes Linux/Unix - Pratiquer plus
+## 3b - Embellir Linux - Activer les couleurs
+
+ Vous devez ici trouver un moyen d'ajouter de la vie dans votre terminal. Vous allez y mettre de la couleur.
+ Lorsque vous utilisez la commande `ls` celle-ci devra retourner les informations en couleurs.
+ La configuration devra fonctionner (être active) automatiquement toutes les fois vous ouvrez un nouveau terminal.
+ Finalement, vous devez changer le prompt similaire a ce qui suit.
+ 
+ ![](./i/prompt.png)
+
+#### Questions
+ + Q1. Décrire sous la forme d'un `script bash` les étapes pour configurer et obtenir des couleurs dans le terminal.
+ + Q2. Pouvez-vous exécuter votre script de configuration plusieurs fois ? 
+ + Q3. Vous avez répondu non en Q2 corrigez-le.
+ + Q4. Quelle commande active les changements permanents dans la session terminale active ?
+ + Q5. Décrire ce qui est nécessaire pour parvenir à changer le `prompt`.
+
+## 3c - Commandes Linux/Unix - Pratiquer plus
 
 Dans la première partie de ce laboratoire, vous allez pratiquer les commandes
 Unix grâce à un jeu sérieux. Rendez vous sur le site
