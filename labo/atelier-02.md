@@ -1,7 +1,7 @@
 # Atelier 02: Programmer en C, Makefile, Git
 ----
 **Note** : (_facultatif_) S'il y a des questions dans ce labo, répondez y dans un fichier nommé
-`./labo/reponse-labo-XX.md`. `XX` étant le numéro de séance. Le fichier doit être dans un format `Markdown`. 
+`./labo/reponse-labo-XX.md`. `XX` étant le numéro de l'atelier. Le fichier doit être dans un format `Markdown`. 
 Utiliser un projet `privé` nommé `inf3135-a2020` pour déposer le fichier demandé.
 Utiliser le même format de fichier pour tous les exercices.
 
@@ -29,7 +29,7 @@ endroit.  Les commandes : `cd`, `mkdir`, `ls` et `rm` sont utiles pour réaliser
 $ cd
 $ mkdir inf3135 ; cd inf313*
 $ mkdir seance-02
-$ cd seance-02/
+$ cd atelier-02/
 ~~~~
 
 ## 1 - Gestion des arguments de la fonction main (partie 1)
