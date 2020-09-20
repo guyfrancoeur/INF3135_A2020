@@ -1,4 +1,4 @@
-# Séance 2: Programmer en C, Makefile, Git
+# Atelier 02: Programmer en C, Makefile, Git
 ----
 **Note** : (_facultatif_) S'il y a des questions dans ce labo, répondez y dans un fichier nommé
 `./labo/reponse-labo-XX.md`. `XX` étant le numéro de séance. Le fichier doit être dans un format `Markdown`. 
