@@ -6,7 +6,7 @@ Utiliser un projet `privé` nommé `inf3135-a2020` pour déposer le fichier dema
 Utiliser le même format de fichier pour tous les exercices.
 
 ##### Format du fichier Markdown
- + Séance 01 (Header 1)
+ + Atelier XX (Header 1)
  + Exercice {1..n} (H2)
  + Question {1..n} (H4)
  + S`2`.E`3`.Q`1` (strong) `est une valeur qui change bien sûr`
