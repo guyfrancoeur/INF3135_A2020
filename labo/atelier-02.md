@@ -28,7 +28,7 @@ endroit.  Les commandes : `cd`, `mkdir`, `ls` et `rm` sont utiles pour réaliser
 ~~~~
 $ cd
 $ mkdir inf3135 ; cd inf313*
-$ mkdir seance-02
+$ mkdir atelier-02
 $ cd atelier-02/
 ~~~~
 
