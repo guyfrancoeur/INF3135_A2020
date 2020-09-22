@@ -97,12 +97,12 @@ Source : Larousse FR
   `-Wall -Werror=vla -pedantic -std=c11`;
 
 - Lorsqu'on entre `make clean`, le projet revient dans son état d'origine, c'est-à-dire
-  son état lors de la récupération initiale;
+  son état lors de la récupération initiale, ou le strict nécessaire;
 
 - Lorsqu'on entre `make lib`, le téléchargement du fichier 
   https://github.com/guyfrancoeur/INF3135_A2020/raw/master/tp/tp1.zip
   se fait de façon automatique dans un répertoire (./data). Par la suite, la décompression
-  est nécessaire;
+  est nécessaire pour extraire tcv.h et tcv.o vers le ./ (racine du projet);
 
 - Lorsqu'on entre `make test` le programme tp1 s'exécutera.
 
