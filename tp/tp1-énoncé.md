@@ -23,7 +23,7 @@ Concrètement vous allez programmer un module (un Beacon) qui traite de l'inform
 à son tour des transactions.
 
 #### Un éméteur Beacon
-![](./module.png =450x)
+![](./moduleB.png)
 
 ## Description du travail
 
