@@ -22,7 +22,7 @@ de réaliser des programmes qui vont permettre de lutter et prévenir dans un te
 Concrètement vous allez programmer un module (un Beacon) qui traite de l'information reçue et qui réagit en émettant
 à son tour des transactions.
 
-#### Un éméteur Beacon
+#### Un émetteur Beacon
 ![](./moduleB.png)
 
 ## Description du travail
@@ -62,13 +62,13 @@ $ ./tp1
 - Les questions devront toutes être posées dans le forum de discussion GitHub section *Issues*;
 - Une demande de solutions (réponse), comment faire ceci ou cela sera considéré comme un plagiat;
 - Une branche nommée `testunitaire` sera produite et votre travail sera livré dans cette branche;
-> > - La simplicité de vos livrables est exigée.  Aucun code ésotérique ne sera accepté.
+> - La simplicité de vos livrables est exigée.  Aucun code ésotérique ne sera accepté.
 
-> > Définition :
-> > + ésotérique : Se dit d'un mode d'expression, d'une œuvre qui n'est compréhensible que des initiés;
-> >
-> > Synonyme :
-> > + mystérieux : Qui est incompréhensible ou inexplicable;
+> Définition :
+> + ésotérique : Se dit d'un mode d'expression, d'une œuvre qui n'est compréhensible que des initiés;
+>
+> Synonyme :
+> + mystérieux : Qui est incompréhensible ou inexplicable;
 
 Source : Larousse FR
 
@@ -81,10 +81,13 @@ Source : Larousse FR
    + 50 @ 200 
    + [info](https://www.livescience.com/42081-normal-heart-rate.html)
  - Signal RSSI
-   + -25 @ -85 
+   + -85 @ -25 
    + [info](https://dzone.com/articles/formula-to-convert-the-rssi-value-of-the-ble-bluet)
  
  **NOTE les valeurs sont inclusives.**
+ 
+ **Les valeurs décimales sont nocives pour l'ordinateur pourquoi ?** `Répondre dans le README.md`
+ **Vous devez donc passer des valeurs entières aux fonctions, les dixièmes deviennent des unités.**
 
 ## Makefile
 
@@ -109,9 +112,10 @@ Source : Larousse FR
 ### Complément
 
 + `-std=c11` indique au compilateur de traiter le code selon le standard C11 (2011) (et donc 
-de rejeter certaines extensions comme celles de GNU par exemple)
-+ `-pedantic` permet de signaler les avertissements, ou warnings, selon la norme ISO
-+ `-Wall` permet de signaler un grand nombre d'autres warnings décrit dans le man gcc.
+de rejeter certaines extensions comme celles de GNU par exemple).
++ `-pedantic` signale les avertissements, ou warnings, selon la norme ISO.
++ `-Wall` signale un grand nombre d'autres warnings décrit dans le man gcc.
++ `-Werror=vla` signale une erreur si un VLA est utilisé. `Variable Length Array`.
 En effet, la grande permissivité de C réduit l'aide du compilateur (lorsqu'il n'y a pas d'option)
 pour traquer certaines erreurs et les mauvaises pratiques de programmation.
 
