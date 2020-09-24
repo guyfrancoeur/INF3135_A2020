@@ -110,6 +110,8 @@ Ce cours est basé sur les travaux d'Alexandre Blondin Massé, Professeur, que j
 + [astyle source code beautifier](https://sourceforge.net/projects/astyle/files/astyle/astyle%203.1/)
 + [Étude sur le plagiat](https://www.uqac.ca/plagiat/documents/crepuq_plagiat.pdf)
 + [Politiques et règlements du département d'informatique](http://info.uqam.ca/politiques/)
++ [Aide académique à la réussite](https://info.uqam.ca/aide/)
++ [Espace disque et Quota](https://wiki.uqam.ca/display/SWSI/Labunix#Labunix-Espacedisque/Quota)
 
 ----
 
