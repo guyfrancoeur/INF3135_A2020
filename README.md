@@ -112,6 +112,7 @@ Ce cours est basé sur les travaux d'Alexandre Blondin Massé, Professeur, que j
 + [Politiques et règlements du département d'informatique](http://info.uqam.ca/politiques/)
 + [Aide académique à la réussite](https://info.uqam.ca/aide/)
 + [Espace disque et Quota](https://wiki.uqam.ca/display/SWSI/Labunix#Labunix-Espacedisque/Quota)
++ [clé putty ssh/rsa](https://devops.ionos.com/tutorials/use-ssh-keys-with-putty-on-windows/)
 
 ----
 
