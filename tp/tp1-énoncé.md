@@ -6,7 +6,7 @@
   De plus, vos sources seront maintenues dans un gestionnaire de version/source de type git.
   
   La compréhension et la prise de décision sont aussi des objectifs à atteindre durant la mise en oeuvre
-  , la réalisation, de vos travaux.
+  et la réalisation de vos travaux.
 
 ## Sujet
 
@@ -76,18 +76,21 @@ Source : Larousse FR
  - Température humaine
    + +17.0C @ +40.0C
  - Température ambiante
-   + -40.0 @ +40.0
+   + -40.0C @ +40.0C
  - Pulsation par minutes
-   + 50 @ 200 
-   + [info](https://www.livescience.com/42081-normal-heart-rate.html)
+   + 50 @ 200 (ppm)
+   + [info complémentaire](https://www.livescience.com/42081-normal-heart-rate.html)
  - Signal RSSI
    + -85 @ -25 
-   + [info](https://dzone.com/articles/formula-to-convert-the-rssi-value-of-the-ble-bluet)
+   + [info complémentaire](https://dzone.com/articles/formula-to-convert-the-rssi-value-of-the-ble-bluet)
  
  **NOTE les valeurs sont inclusives.**
  
- **Les valeurs décimales sont nocives pour l'ordinateur pourquoi ?** `Répondre dans le README.md`
- **Vous devez donc passer des valeurs entières aux fonctions, les dixièmes deviennent des unités.**
+ - Les valeurs décimales sont nocives pour l'ordinateur pourquoi ?
+   + Répondre à la question dans le `README.md` dans la section `Réponse` Q1.
+ - **Vous devez donc passer des valeurs entières aux fonctions, les dixièmes deviennent des unités.**
+ - Vous devez repecter les limites des types de données pourquoi ?
+   + Répondre à la question dans le `README.md` dans la section `Réponse` Q2.
 
 ## Makefile
 
@@ -170,6 +173,10 @@ pour traquer certaines erreurs et les mauvaises pratiques de programmation.
 
    <indiquez si le projet est complété ou s'il y a des bogues>
    
+   ## Réponse
+   
+   <s'il y a des questions répondre ici>
+   
    ## Autoévaluation
    
    <mon travail vaut quelques points en fonction du barème>
@@ -192,7 +199,7 @@ pour traquer certaines erreurs et les mauvaises pratiques de programmation.
 
 - Un fichier `tp1.c` contenant le code source de votre projet, ainsi que votre fonction `main`;
 - Un fichier `README.md` avec le titre du projet, les auteurs, les exemples, etc;
-- Un fichier nommé `Makefile` supportant les appels `make`, `make clean`, `make lib` et `make test` ;
+- Un fichier nommé `Makefile` supportant les appels `make`, `make clean`, `make lib` et `make test`;
 - Un fichier nommé `cp.txt` avec votre code permanent en majuscule;
 - Un fichier de script bash nommé `liste.sh`;
 - Un fichier ``.gitignore``.
