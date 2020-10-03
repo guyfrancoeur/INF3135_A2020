@@ -84,8 +84,8 @@ Source : Larousse FR
    + -85 @ -25 
    + [info complémentaire](https://dzone.com/articles/formula-to-convert-the-rssi-value-of-the-ble-bluet)
  
- ##### Important
-  - **les valeurs sont inclusives.**
+ ##### `Important`
+  - **Les valeurs sont inclusives.**
   - Les valeurs décimales sont nocives pour l'ordinateur, pourquoi ?
     + Répondre à la question dans le `README.md` dans la section `Réponse` Q1.
   - **Vous devez donc passer des valeurs entières aux fonctions, les dixièmes deviennent des unités.**
