@@ -1,5 +1,5 @@
 # Atelier 02: Programmer en C, Makefile, Git
-----
+
 **Note** : (_facultatif_) S'il y a des questions dans ce labo, répondez y dans un fichier nommé
 `./labo/reponse-labo-XX.md`. `XX` étant le numéro de l'atelier. Le fichier doit être dans un format `Markdown`. 
 Utiliser un projet `privé` nommé `inf3135-a2020` pour déposer le fichier demandé.
