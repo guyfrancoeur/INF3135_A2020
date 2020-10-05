@@ -37,23 +37,33 @@ Vous avez aussi compris que `all_atelier_test` est dépendant de `all_atelier_bu
 
 ## 1 - Arguments de la fonction main
 
-Écrivez un petit programme C nomme `cmdline.c` qui accepte un nombre limité et
-spécifique en provenance de la ligne de commande.
+Écrivez un programme C nommé `cmdline.c` qui accepte un nombre limité et spécifique d'options en provenance de la ligne de commande.
 
-Vous devez pour faire le traitement des arguments écrire une fonction `int cmdline()`
-qui accepte `-c CODE` obligatoire, et les suivants facultatifs `-1 int`,  `-2 int`, 
-`-d INC | DEC`. `-d` `-1` et `-2` devront être validé et si une erreur est détectée, 
-l'application doit arrêter avec code de retour.
+Vous devez traiter les arguments passés à la ligne de commande. Votre programme contient une fonction nommée `int cmdline()`
+qui sera appelée dans votre programme principal.  La fonction agit de la façon suivante, `<-c CODE>` est une option obligatoire, 
+et les options `[-v <nombre>]`, `[-d <INC | DEC>]` sont facultatives. Tous les traitements des options `-d` `-c` et `-v` et le complément de celle-ci devront être validés.  Si une erreur est détectée, l'application doit arrêter et retourner le bon code de retour.
+
++ Comment  faut-il lire `[-d <INC | DEC>]` ?
+  - `-d` est facultatif à cause de `[` et `]`
+  - le mot `INC` ou `|` le mot `DEC` sont obligatoire à cause de `<` et `>`
+
+un exemple : `./executable -c MART01010199 -d DECR -v -1`
 
 #### code de retour
-+ `0` : exécution avec succès;
-+ `1` : si -c et/ou le code ne sont pas présents;
-+ `2` : si le `-1` et `-2` ne sont pas de type entier naturel N*;
++ `0` : exécution avec succès, aucune erreur dans le traitement des options passées;
++ `1` : si -c ou le code (code est un MOT, le mot que vous voulez) n'est pas présent;
++ `2` : si l'option qui complète le `-v` et n'est pas de type entier naturel N*;
 + `3` : si `-d` et/ou `DEC | INC` ne sont pas présent; 
 
 #### Questions
-+ Q1. Quelle instruction vous permet de retourner le code 0?
-+ Q2. Quelle instruction vous permet de retourner le code 1?
++ Q1. Quel est le type qui correspond au nombre entier naturel en C?
++ Q2. Quelle commande (un exemple) retourne :
+  - Q2a. le code de retour 0?
+  - Q2b. le code de retour 1?
+  - Q2c. le code de retour 2?
+  - Q2d. le code de retour 3?
++ Q3. Comment est-ce possible de savoir (ou voir) le code de retour de l'exécutatble `./cmdline`? 
++ Q4. Quelle instruction du langage C vous permet de retourner un code de retour précis?
 
 ## 2 - Chaînes de caractères
 
