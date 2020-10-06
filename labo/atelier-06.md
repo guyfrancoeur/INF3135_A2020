@@ -147,36 +147,36 @@ Exécuter votre programme en ligne de commande et rediriger `stdout` dans `out.t
 Considérez les déclarations suivantes :
 
 ```c
-struct Point { // Un point en 2D
+struct Point_s { // Un point en 2D
     double x;  // Sa coordonnée x
     double y;  // Sa coordonnée y
 };
 
-struct Segment {
+struct Segment_s {
     struct Point p1;
     struct Point p2;
 };
 
-struct Triangle {
+struct Triangle_s {
     struct Point points[3];
 };
 ```
 
 1. Écrivez une fonction
     ```c
-    void initialiserSegment(struct Segment *segment, double x1, double y1, double x2, double y2);
+    void initialiserSegment(struct Segment_s *segment, double x1, double y1, double x2, double y2);
     ```
    qui crée un segment dont les extrémités sont les points `(x1,y1)` et `(x2,y2)`.
 
 2. Écrivez une fonction
     ```c
-    double longueurSegment(const struct Segment *segment);
+    double longueurSegment(const struct Segment_s *segment);
     ```
    qui retourne la longueur de `segment`.
 
 3. Écrivez une fonction
     ```c
-    void initialiserTriangle(struct Triangle *triangle,
+    void initialiserTriangle(struct Triangle_s *triangle,
                              double x1, double y1,
                              double x2, double y2,
                              double x3, double y3);
@@ -185,36 +185,34 @@ struct Triangle {
 
 4. Écrivez une fonction
     ```c
-    double perimetreTriangle(const struct Triangle *triangle);
+    double perimetreTriangle(const struct Triangle_s *triangle);
     ```
    qui retourne le périmètre de `triangle`, c'est-à-dire la somme des longueurs
    de ses côtés. Bien qu'il soit possible de faire le calcul directement,
-   faites appel à la fonction `longueurSegment` que vous avez implémentée plus
-   tôt.
-
+   faites appel à la fonction `longueurSegment` que vous avez implémentée plus tôt.
 
 ## 4 - Unions et types énumératifs
 
 Considérons la structure de données suivante :
 
 ```c
-enum TypeNombre {
+enum Nombre_e {
     INT, FLOAT, DOUBLE
 };
 
 typedef struct {           // Un nombre
-    enum TypeNombre type;  // Le type de nombre
+    enum Nombre_e type;  // Le type de nombre
     union {
         int i;
         float f;
         double d;
     } valeur;              // La valeur
-} Nombre;
+} Nombre_t;
 ```
 
 Donnez l'implémentation d'une fonction dont la signature est
 ```c
-Nombre max(Nombre a, Nombre b);
+Nombre_t max(Nombre_t a, Nombre_t b);
 ```
 et qui retourne le maximum entre les nombres `a` et `b`, peu importe leur type.
 
