@@ -119,8 +119,24 @@ Q3. Sur 10 quelle est la difficulté de cet exercice?
   projet comme paramètre.  Le même paramètre sera utilisé comme nom de `répertoire` pour héberger
   votre dépôt local.  Le script doit créer le nouveau répertoire  dans votre `$HOME`.
   Le nouveau projet sera créé dans GitHub.
-  `
- 
+  
+## La calculatrice bash
+
+Vous devez créer un script `bash` traite deux nombres et un opérateur (+-*/). Ils devront être donnés en paramètres.
+Le script doit réaliser l'opération souhaitée et fournir la bonne réponse.  Créer une fonction pour faire l'opération.
+Le programme `script` doit aussi retourner la réponse sous la forme d'un code de retour.  Finalement, `Le résultat est : 11` 
+doit être envoyé sur le canal d'erreur. Ah oui, s'il y a une erreur d’afficher `Erreur!`.
+
+```
+$ ./calc.sh 7 + 4 
+Le résultat est : 11
+```
+ + Q1. Comment obtenir le code de retour ?
+ + Q2. Quelle est la limitation de ce programme ?
+ + Q3. Comment faire pour éliminer l'affichage sorti dans le terminal ? 
+    - Donnez un exemple fonctionnel de commande qui n'affiche pas de sortie à l'écran.
+ + Q4. Donnez un exemple qui implique la multiplication.
+
 ### FIN.
 ---
 ##### Auteur Guy Francoeur :copyright: version A2020 
