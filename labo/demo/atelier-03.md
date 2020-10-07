@@ -6,6 +6,9 @@
 
 #### Vous devez toujours tenter vos propres expériences afin d'en avoir le coeur net.
 
+### Référence
++ Référence pour l'exercice 5 : [sqrt méthode de NEWTON](https://math.mit.edu/~stevenj/18.335/newton-sqrt.pdf)
+
 ### Compilation
 
 + `gcc -std=c11 -Werror=vla -Wall atelier-03.c`
@@ -18,7 +21,6 @@
 + `$ ./a.out -d DEC -c DEIF`
 + `$ ./a.out -d DEC -c DEIF -v`
 + `$ ./a.out -d DEC -c DEIF -v 1`
-
 
 ### Programme C
 ```c
