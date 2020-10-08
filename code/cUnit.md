@@ -71,6 +71,7 @@ int max (int n1, int n2)
 //#include "Console.h"
 #include "max.h"         // declaration de mes fonctions
 #include <stdio.h>       // printf
+#include <stdbool.h>     // bool true false
 
 /*****  LES fonctions qui initialise et detruit la "Suite de test" ******/
 
@@ -83,6 +84,8 @@ void test_case_exemple(void)
 {
    // Les types d'assertions disponibles
    CU_ASSERT(CU_TRUE);
+   CU_ASSERT_TRUE(true);
+   CU_ASSERT_FALSE(false);
    CU_ASSERT_NOT_EQUAL(2, -1);
    CU_ASSERT_STRING_EQUAL("string #1", "string #1");
    CU_ASSERT_STRING_NOT_EQUAL("string #1", "string #2");
