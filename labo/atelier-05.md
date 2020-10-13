@@ -79,7 +79,7 @@ Q3. Sur 10 quelle est la difficulté de cet exercice?
    de la fonction `printf` dans un fichier nommé `man-printf.txt`.
    
 + Q2. (curl, grep) Affichez toutes les lignes qui contiennent le mot `tableau` dans
-   le fichier `atelier-05.md`, ou un fichier de votre choix, disponible dans le dépôt distant.
+   `ce fichier`, ou un fichier `Markdown` de votre choix, disponible dans le dépôt distant.
    
 + Q3. (git log, grep, sort, uniq) Affichez tous les contributeurs d'un projet
    versionné avec git. Par exemple, j'obtiens le résultat suivant pour le
