@@ -120,7 +120,7 @@ Q3. Sur 10 quelle est la difficulté de cet exercice?
   votre dépôt local.  Le script doit créer le nouveau répertoire  dans votre `$HOME`.
   Le nouveau projet sera créé dans GitHub.
   
-## La calculatrice bash
+## 3 - La calculatrice bash
 
 Vous devez créer un script `bash` traite deux nombres et un opérateur (+-*/). Ils devront être donnés en paramètres.
 Le script doit réaliser l'opération souhaitée et fournir la bonne réponse.  Créer une fonction pour faire l'opération.
@@ -136,6 +136,49 @@ Le résultat est : 11
  + Q3. Comment faire pour éliminer l'affichage sorti dans le terminal ? 
     - Donnez un exemple fonctionnel de commande qui n'affiche pas de sortie à l'écran.
  + Q4. Donnez un exemple qui implique la multiplication.
+
+## 4 - La boucle sur la chaine
+
+Vous devez faire une fonction qui boucle sur pour les caractères de la chaine reçu en paramèttre.
+Idéalement vous devez faire un programme qui n'a pas de dépendance sur des commandes du système d'exploitation.
+
+#### Compléter
+```bash
+#!/bin
+
+# sortir du programme si nous n'onvons pas 1 argument
+
+
+# faire un fonction ma_fonction qui traite affiche la chaine en diagonale
+
+
+# faire l'appel de la fonction
+call function
+
+# afficher le nombre de caratères de la chaine
+echo 18
+
+# sortir avec le nombre de caractere de la chaine
+exit 18
+```
+
+#### Sortie
+
++ `bash ./chaine.sh "ceci est la chaine"
+
+
+```
+c
+ e
+  c
+   i
+    
+     e
+      s
+       t
+... vous avez compris
+18
+````
 
 ### FIN.
 ---
