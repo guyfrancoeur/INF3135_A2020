@@ -79,7 +79,7 @@ Plus précisément, vous devez respecter les contraintes suivantes:
 + Q1. (man, head) Sauvegardez les 20 premières lignes du "manuel d'instructions"
    de la fonction `printf` dans un fichier nommé `man-printf.txt`.
    
-+ Q2. (curl, grep) Affichez toutes les lignes qui contiennent le mot `tableau` dans
++ Q2. (curl, grep) Affichez toutes les lignes qui contiennent le mot `chaine` dans
    `ce fichier`, ou un fichier `Markdown` de votre choix, disponible dans le dépôt distant.
    
 + Q3. (git log, grep, sort, uniq) Affichez tous les contributeurs d'un projet
@@ -123,7 +123,7 @@ Plus précisément, vous devez respecter les contraintes suivantes:
   
 ## 3 - La calculatrice bash
 
-Vous devez créer un script `bash` traite deux nombres et un opérateur (+-*/). Ils devront être donnés en paramètres.
+Vous devez créer un script `bash` traite deux nombres et un opérateur `+ - * /`. Ils devront être donnés en paramètres.
 Le script doit réaliser l'opération souhaitée et fournir la bonne réponse.  Créer une fonction pour faire l'opération.
 Le programme `script` doit aussi retourner la réponse sous la forme d'un code de retour.  Finalement, `Le résultat est : 11` 
 doit être envoyé sur le canal d'erreur. Ah oui, s'il y a une erreur d’afficher `Erreur!`.
