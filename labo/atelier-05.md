@@ -65,9 +65,10 @@ Plus précisément, vous devez respecter les contraintes suivantes:
 - Le pays doit occuper exactement 4 colonnes aussi (il faut couper sinon);
 - La population doit être alignée à droite.
 
-Q1. De quelle manière allez-vous procéder? Vous allez commencer par quoi?
-Q2. Comment pourrait-on s'y prendre pour valider rapidement que la sortie de votre programme est exacte?
-Q3. Sur 10 quelle est la difficulté de cet exercice?
+#### Questions
+- Q1. De quelle manière allez-vous procéder? Vous allez commencer par quoi?
+- Q2. Comment pourrait-on s'y prendre pour valider rapidement que la sortie de votre programme est exacte?
+- Q3. Sur 10 quelle est la difficulté de cet exercice?
 
 ## 2 - Commandes d'une ligne (Linux)
 
