@@ -1,0 +1,54 @@
+#!/bin/bash
+
+# formate une colonne selon
+# - taille min/max
+# - caractere de padding (gauche ou droite)
+function formatage_colonne () {
+	chaine="$1"
+	taille_colonne=$2
+	longueur_min=$3
+	padding="$4"
+	before_after=$5
+	if [ ${#chaine} -gt $taille_colonne ]; then
+		# tester si $col2 > 15, si oui couper, sinon, 
+		chaine=${chaine::taille_colonne}
+	else
+		while [ ${#chaine} -lt $taille_colonne ]
+		do
+			if [ $before_after -gt 0 ]; then
+				chaine="$chaine""$padding"
+				# padder avec des espaces pour atteindre 15 characteres
+			else
+				chaine="$padding""$chaine"
+			fi
+		done
+	fi
+	echo "$chaine"
+}
+
+# recuperer l'argument du script (ici un nom de fichier est attendu)
+input="$1"
+# verifie que le fichier existe bien (-f)
+if [ -f "$input" ]; then
+	# afficher le header
+	echo " Rang  Nom           Pays  Population"
+	echo " ----  ---           ----  ----------"
+	cursor=1
+	# lire les lignes du fichier (while...done)
+	while IFS="" read -r line || [ -n "$line" ]
+	do
+		# lire chaque colonne de la ligne dans un tebleau (csv_line)
+		IFS=',' read -ra csv_line <<< "$line"
+		
+		# completer le prefixe avec des 0 (taille 4)
+		col0=$(formatage_colonne "$cursor" 4 4 "0" 0)
+		# padder avec espaces a droite ou couper si > 15
+		col1=$(formatage_colonne "${csv_line[0]}" 15 15 " " 1)
+		# idem mais avec 4
+		col2=$(formatage_colonne "${csv_line[1]}" 4 4 " " 1)
+		# aligner a droite avec 10 caracteres (meme principe, mais padding a gauche)
+		col3=$(formatage_colonne "${csv_line[2]}" 10 10 " " 0)
+		echo " $col0  $col1           $col2  $col3"
+		cursor=$((cursor+1))
+	done < "$input"
+fi
