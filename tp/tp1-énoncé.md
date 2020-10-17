@@ -58,7 +58,7 @@ $ ./tp1
 
 - Les fichiers d'entête standard sont tous permis. Tel que `#include <stdio.h>`;
 - Vous devez utiliser les fichiers `tcv.h` et `tcv.o` qui sont fournis dans `tp1.zip`;
-- `cUnit` est une librairie non standard (car elle ne fait pas du langage C de base) qui est utilisée pour ce travail;
+- `cUnit` est `la seule` librairie non standard (car elle ne fait pas du langage C de base) qui est authorisée pour ce travail;
 - Les questions devront toutes être posées dans le forum de discussion GitHub section *Issues*;
 - Une demande de solutions (réponse), comment faire ceci ou cela sera considéré comme un plagiat;
 - Une branche nommée `testunitaire` sera produite et votre travail sera livré dans cette branche;
@@ -129,12 +129,13 @@ pour traquer certaines erreurs et les mauvaises pratiques de programmation.
 ## liste.sh
 
  Votre programme exécutable `tp1` affiche beaucoup de choses lorsqu'il est lancé.  Le fichier nommé `liste.sh`
- recevra via stdin le stdout de `tp1`. Le rôle de `liste.sh`, produire uniquement les noms des fonctions qui sont
- valides et fonctionnelles. Il y aura certainement plusieurs fonctions qui vont être listées.
+ traite les données reçues via `stdin`. Le rôle de `liste.sh`, *(filtrer, épurer)* produire sur le canal `stdout` uniquement
+ les noms des fonctions qui sont valides et fonctionnelles. Il y aura certainement plusieurs fonctions qui seront listées.
+ Le programme `liste.sh` n'a aucun dépendance fonctionnel.
  
  ##### exemple de sortie
  ```
- validerSignal_4
+ validerSignal_7
  validerTA_9
  ```
 
