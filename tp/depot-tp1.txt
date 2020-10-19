@@ -6,6 +6,7 @@ https://github.com/AurelienGG/inf3135-a2020
 https://github.com/BassemNasralla/inf3135-a2020
 https://github.com/bcote9005/inf3135-a2020
 https://github.com/bdkandil/inf3135-a2020
+https://github.com/Beva-Lwash/inf3135-a2020
 https://github.com/bj291929/inf3135-a2020
 https://github.com/B-Yan/inf3135-a2020
 https://github.com/cmiquelon/inf3135-a2020
@@ -39,8 +40,10 @@ https://github.com/kousseylakadri/inf3135-a2020
 https://github.com/Kyowdem/inf3135-a2020
 https://github.com/laricekl/inf3135-a2020
 https://github.com/L-bern/inf3135-a2020
+https://github.com/LikensonD/inf3135-a2020
 https://github.com/LMGsean/inf3135-a2020
 https://github.com/louizette/inf3135-a2020
+https://github.com/MaelPJoly/inf3135-a2020
 https://github.com/maxowell/inf3135-a2020
 https://github.com/mednadi/inf3135-a2020
 https://github.com/Mouad-Latif/inf3135-a2020
@@ -67,3 +70,4 @@ https://github.com/StevenTran3007/inf3135-a2020
 https://github.com/TarekElTayeh/inf3135_a2020
 https://github.com/thierrymayombot/inf3135-a2020
 https://github.com/tq3636/inf3135-a2020
+https://github.com/WARB24069805/inf3135-a2020
