@@ -196,12 +196,12 @@ pour traquer certaines erreurs et les mauvaises pratiques de programmation.
   `guyfrancoeur` comme collaborateur. Ceci permettra récupérer et possiblement de déposer qqc commentaires
   (via un fichier) dans votre projet.
 
-  Votre projet devrait minimalement contenir, à la racine du dépôt, les fichiers de type `Unix/Linux` et `ascii` suivants :
+  Votre projet devrait minimalement contenir, à la racine, les fichiers de type `Unix/Linux` et `ascii` suivants :
 
 - Un fichier `tp1.c` contenant le code source de votre projet, ainsi que votre fonction `main`;
 - Un fichier `README.md` avec le titre du projet, les auteurs, les exemples, etc;
 - Un fichier nommé `Makefile` supportant les appels `make`, `make clean`, `make lib` et `make test`;
-- Un fichier nommé `cp.txt` avec votre code permanent en majuscule;
+- Un fichier nommé `cp.txt` qui contient votre code permanent en majuscule;
 - Un fichier de script bash nommé `liste.sh`;
 - Un fichier ``.gitignore``.
 
