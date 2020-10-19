@@ -69,10 +69,10 @@ fi
 ```
 
 ### Exercice 2
-- Q.1 : `man printf | head -n20 > man-printf.txt`
-- Q.2 : Q.2 : `curl https://raw.githubusercontent.com/guyfrancoeur/INF3135_A2020/master/labo/atelier-05.md | grep chaine`
-- Q.3 : `git log | grep 'Author' | uniq`
-- Q.4 : `git log | grep 'Author' | uniq | sed 's/Author: //g' | sed 's/<.*>//g'`
+- Q.1 : `$` `man printf | head -n20 > man-printf.txt`
+- Q.2 : `$` `curl https://raw.githubusercontent.com/guyfrancoeur/INF3135_A2020/master/labo/atelier-05.md | grep chaine`
+- Q.3 : `$` `git log | grep 'Author' | uniq`
+- Q.4 : `$` `git log | grep 'Author' | uniq | sed 's/Author: //g' | sed 's/<.*>//g'`
 
 
 ### Facultatif
