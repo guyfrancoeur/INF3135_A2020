@@ -98,9 +98,9 @@ clone	push	retard	README.md                	Makefile                 	tp1.c     
 # de depot :95
 
 erreur :
-128: Le nom du projet est errone ou inexistant.
+128: Le nom du projet (ou branche obligatoire) est errone ou inexistant.
   1: You are not allowed to push into this branch. *Droits d'ecriture dans la branch master.*
-Piste lorsque push != 0 : 
+Piste pour la resolution lorsque push != 0 : 
 	Est-ce que master ou main est la branche par defaut?
 	Est-ce l'enseignant est collaborateur? 
 	Est-ce que vous avez la branche requise?
