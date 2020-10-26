@@ -144,5 +144,4 @@ Questions :
 
 ### FIN.
 ---
-
-##### Auteur Guy Francoeur, édition A2020
+##### Auteur Guy Francoeur :copyright: version A2020 
