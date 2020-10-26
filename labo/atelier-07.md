@@ -1,4 +1,4 @@
-# Atelier 07: Type abstrait de données et modularité
+# Atelier 07: Type abstrait de données
 
 **Note** : (_facultatif_) S'il y a des questions dans ce labo, répondez y dans un fichier nommé
 `./labo/reponse-labo-XX.md`. `XX` étant le numéro de l'atelier. Le fichier doit être dans un format `Markdown`. 
