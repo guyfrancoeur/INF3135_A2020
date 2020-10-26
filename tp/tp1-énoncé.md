@@ -23,6 +23,7 @@ Concrètement vous allez programmer un module (un Beacon) qui traite de l'inform
 à son tour des transactions.
 
 #### Un émetteur Beacon
+- fait au Québec
 ![](./moduleB.png)
 
 ## Description du travail
@@ -89,7 +90,7 @@ Source : Larousse FR
   - Les valeurs décimales sont nocives pour l'ordinateur, pourquoi ?
     + Répondre à la question dans le `README.md` dans la section `Réponse` Q1.
   - **Vous devez donc passer des valeurs entières aux fonctions, les dixièmes deviennent des unités.**
-  - Vous devez repecter les limites des types de données, pourquoi ?
+  - Vous devez respecter les limites des types de données, pourquoi ?
     + Répondre à la question dans le `README.md` dans la section `Réponse` Q2.
 
 ## Makefile
