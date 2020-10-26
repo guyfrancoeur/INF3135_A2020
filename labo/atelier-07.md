@@ -62,7 +62,7 @@ Il souhaitable d'utiliser `valgrind` pour compléter les exercices de cette séa
 
 ## 2 (a et b) - Implémentation d'une Ensemble (*set*)
 
-Vous allez créer un seule fichier par cas et y mettre tout le code nécessaire.
+Vous allez créer un seul fichier par cas et y mettre tout le code nécessaire. Pas de `.h` ici.
 
 - Un `set` contient des éléments uniques ou pas;
   + Faire la version que vous voulez, mais la version avec des éléments unique est surement plus intéressante;
@@ -70,12 +70,6 @@ Vous allez créer un seule fichier par cas et y mettre tout le code nécessaire.
   + votre fichier sera nommé `set_number.c`;
 - b) Dans cet exercice vous allez gérer des éléments `chaine de caractères`.
   + votre fichier sera nommé `set_string.c`;
-
-Les fonctionnalités suivantes devraient être presentes :
-
-- ajouter
-- supprimer
-- recercher
 
 Dans cet exercice vous allez gérer des éléments en fonction du cas.
 Les fonctionnalités suivante devraient être presentes :
