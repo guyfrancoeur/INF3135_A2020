@@ -1,3 +1,7 @@
+// creation des types matrice et matriceout
+typedef char matrice[5][50];
+typedef char matriceout[5][50];
+
 // ajoute les valeurs de deux matrices 
 //NOTA: les blocs de code commentes pour l'ex 1, le reste est pour le 2
 void add(matriceout* _out, matrice _m1, matrice _m2, size_t _length1, size_t _length2) {
