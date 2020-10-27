@@ -1,0 +1,133 @@
+# Démonstration atelier 06
+
+### Mise en garde
+ + Le code ou les exemples sont purement académiques, ils peuvent contenir des erreurs.
+ + Ils ne sont pas destinés pour un usage commercial. La prudence est de mise.
+
+#### Vous devez toujours tenter vos propres expériences afin d'en avoir le coeur net.
+
+### Référence
+ + notes de cours
+ 
+### Contribution
+ - merci au démonstrateur
+
+### Execice 2b - Opération sur les matrices (ascii)
+
+```c
+// creation des types matrice et matriceout
+typedef char matrice[5][50];
+typedef char matriceout[5][50];
+
+// ajoute les valeurs de deux matrices 
+//NOTA: les blocs de code commentes pour l'ex 1, le reste est pour le 2
+void add(matriceout* _out, matrice _m1, matrice _m2, size_t _length1, size_t _length2) {
+  // afficher la premiere matrice m1 
+  //for (int i = 0; i != _length1; ++i) {
+  //  for (int j = 0; j != _length2; ++j) {
+  //    printf("%d ", _m1[i][j]);
+  //  }
+  //  printf("\n");
+  //}
+  //printf("+\n");// avec le +
+
+  //// afficher la deuxieme matrice m2
+  //for (int i = 0; i != _length1; ++i) {
+  //  for (int j = 0; j != _length2; ++j) {
+  //    printf("%d ", _m2[i][j]);
+  //  }
+  //  printf("\n");
+  //}
+  //// afficher le =
+  //printf("=\n");
+  // calculer et afficher le resultat des deux matrices ajoutees
+  for (int i = 0; i != _length1; ++i) {
+    for (int j = 0; j != _length2; ++j) {
+      char value2 = _m2[i][j];
+      char value1 = _m1[i][j];
+      (*_out[i][j]) = value1 + value2;
+      //char out = value1 + value2;
+      //printf("%d ", out);
+    }
+    //printf("\n");
+  }
+}
+
+// moyenne (addition puis division par nombre de matrices. Ici toujours 2)
+
+void avg_multiple(matriceout* _out, matrice* _matrices, size_t _length1, size_t _length2, size_t _nbr_matrices) {
+  // cumuler les valeurs dans les matrices avec add
+  add(_out, _matrices[0], _matrices[1], _length1, _length2);
+  if (_nbr_matrices >= 2) {
+    for (int i = 2; i != _nbr_matrices; ++i) {
+      add(_out, *_out, _matrices[i], _length1, _length2);
+    }
+  }
+  //calculer moyenne
+  for (int i = 0; i != _length1; ++i) {
+    for (int j = 0; j != _length2; ++j) {
+      (*_out[i][j]) = (*_out[i][j]) / _nbr_matrices;// tester que _nbr_matrices != 0
+    }
+  }
+}
+
+void avg(matriceout* _out, matrice _m1, matrice _m2, size_t _length1, size_t _length2) {
+  add(_out, _m1, _m2, _length1, _length2);
+  for (int i = 0; i != _length1; ++i) {
+    for (int j = 0; j != _length2; ++j) {
+      (*_out[i][j]) = (*_out[i][j]) / 2;
+    }
+  }
+}
+
+void atelier_6() {
+  //int retour = cmdline(argc, argv);
+  //printf("%d", retour);
+
+  //double tableau[] = { 3000, 21, 5, 4, 34, 8 };
+  //int resultat = trouverElement(tableau, 6, 3);
+  //printf("%d", resultat);
+
+  typedef char matrice[5][50];
+  typedef char matriceout[5][50];
+
+
+  matrice mat1 = {
+    "Les Canadiens sont une equipe de hockey", "Les Nordiques sont de Quebec",
+    "Ils ne FONT pas de politique", "Super moi non plus", "Hourra!"
+  };
+
+  matrice mat2 = {
+    "Je dors ZZZ zzz", "Le cours de C est le meilleur", "J'aime apprendre",
+    "Nous avons tous le temps pour un bon repas", "UQAM est mon univers"
+  };
+
+  //for (int i = 0; i != 5; ++i) {
+  //  for (int j = 0; j != 50; ++j) {
+  //    if (mat1[i][j] < 32) mat1[i][j] = 32;//
+  //  }
+  //}
+
+  matriceout matresultat1;
+  matriceout matresultat2;
+
+  matriceout* matprt1 = &matresultat1;
+  matriceout* matprt2 = &matresultat2;
+
+  add(matprt1, mat1, mat2, 5, 50);
+
+  avg(matprt2, mat1, mat2, 5, 50);
+
+  // afficher les valeurs de la matrice: caractere puis valeur entiere
+  for (int i = 0; i != 5; ++i) {
+    for (int j = 0; j != 50; ++j) {
+      printf("%c: %d", matresultat1[i][j], matresultat1[i][j]);
+    }
+  }
+
+}
+```
+
+#### FIN.
+---
+révision A2020
