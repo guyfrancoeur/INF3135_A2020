@@ -8,6 +8,9 @@
 
 ### Référence
  + notes de cours
+ 
+### Contribution
+ - merci au démonstrateur
 
 ### Execice 1 - Lecture, traitement et affichage formaté (bash)
 
