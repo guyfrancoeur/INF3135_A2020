@@ -105,7 +105,9 @@ est exempt d'erreurs.  Vous ne devez, en aucun temps (jamais), laisser le hasard
 
 Voici les cas et les traitements :
  + Si un capteur donne une valeur inacceptable, vous devez réagir immédiatement;
- + Si un capteur donne `ERREUR`, vous devez réagir à la troisième manifestation de `ERREUR`;
+   - Vous ajoutez un (1) au compteur `valeur invalide`.
+ + Si un capteur donne le mot `ERREUR`, vous devez réagir à la troisième manifestation du mot `ERREUR`;
+   - Vous ajoutez un (1) au compteur `cumul des erreurs` par type.
 
 ### Transaction en entrée
 
@@ -186,11 +188,16 @@ Voici la liste des sorties possibles.
  + Signature : ```15 <size_t> <size_t> <size_t [size_t ...]>```
  + Événement : 05
 
-21: Moyenne TH TA pulsation
+21: Moyenne TH TA pulsation erreur
  + Définition : ```21 <la moyenne des TH> <la moyenne des TA> <la moyenne des pulsations>```
  + Signature : ```21 <float> <float> <size_t>```
  + Événement : fin du programme
 
+22: Nombre des erreurs TH TA pulsation erreur
+ + Définition : ```22 <valeurs invalides> <cumul pour TH> <cumul pour TA> <cumul pour pulsations>```
+ + Signature : ```22 <size_t> <size_t> <size_t> <size_t>```
+ + Événement : fin du programme
+ 
 ### Résulats (exemple visuel)
 
 #### Directives 
@@ -206,6 +213,7 @@ Voici la liste des sorties possibles.
 ~~~
 0 00 1000 3
 2 01 38.2
+2001 01 ERREUR
 10020 02 -10.2
 11112 03 157
 17599 04 -85 1929292
@@ -215,12 +223,13 @@ Voici la liste des sorties possibles.
 
 #### `sortie`
 ```
-version #: 0.0.10004
+version #: 0.1.10005
 10 0 1000 3
 14 17599 1929292 3.4
 14 19012 1929298 0.1
 15 19511 1000 1929292 1929298
 21 38.2 -10.2 157
+22 0 0 0 0
 ```
  
 ## Makefile
