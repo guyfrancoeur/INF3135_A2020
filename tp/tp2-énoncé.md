@@ -105,9 +105,11 @@ est exempt d'erreurs.  Vous ne devez, en aucun temps (jamais), laisser le hasard
 
 Voici les cas et les traitements :
  + Si un capteur donne une valeur inacceptable, vous devez réagir immédiatement;
-   - Vous ajoutez un (1) au compteur `valeur invalide`.
+   - Vous ajoutez un (1) au compteur `valeur invalide` par type;
+   - voir transaction 22.
  + Si un capteur donne le mot `ERREUR`, vous devez réagir à la troisième manifestation du mot `ERREUR`;
-   - Vous ajoutez un (1) au compteur `cumul des erreurs` par type.
+   - Vous ajoutez un (1) au compteur `cumul des erreurs` par type;
+   - voir transaction 23.
 
 ### Transaction en entrée
 
@@ -194,8 +196,13 @@ Voici la liste des sorties possibles.
  + Événement : fin du programme
 
 22: Nombre des erreurs TH TA pulsation erreur
- + Définition : ```22 <valeurs invalides> <cumul pour TH> <cumul pour TA> <cumul pour pulsations>```
- + Signature : ```22 <size_t> <size_t> <size_t> <size_t>```
+ + Définition : ```22 <compteur valeur invalide pour TH> <compteur valeur invalide pour TA> <compteur valeur invalide pour pulsations>```
+ + Signature : ```22 <size_t> <size_t> <size_t>```
+ + Événement : fin du programme
+
+23: Nombre des erreurs TH TA pulsation erreur
+ + Définition : ```23 <cumul pour TH> <cumul pour TA> <cumul pour pulsations>```
+ + Signature : ```23 <size_t> <size_t> <size_t>```
  + Événement : fin du programme
  
 ### Résulats (exemple visuel)
@@ -229,7 +236,8 @@ version #: 0.1.10005
 14 19012 1929298 0.1
 15 19511 1000 1929292 1929298
 21 38.2 -10.2 157
-22 0 0 0 0
+22 0 0 0
+23 0 0 0
 ```
  
 ## Makefile
