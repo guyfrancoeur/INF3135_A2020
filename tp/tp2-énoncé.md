@@ -108,7 +108,7 @@ Voici les cas et les traitements :
    - Vous ajoutez un (1) au compteur `valeur invalide` par type;
    - voir transaction 22.
  + Si un capteur donne le mot `ERREUR`, vous devez réagir à la troisième manifestation du mot `ERREUR`;
-   - Vous ajoutez un (1) au compteur `cumul des erreurs` par type;
+   - Vous ajoutez un (1) au compteur `cumul des mots ERREUR` par type;
    - voir transaction 23.
 
 ### Transaction en entrée
@@ -190,17 +190,17 @@ Voici la liste des sorties possibles.
  + Signature : ```15 <size_t> <size_t> <size_t [size_t ...]>```
  + Événement : 05
 
-21: Moyenne TH TA pulsation erreur
+21: Moyennes pour TH TA pulsation
  + Définition : ```21 <la moyenne des TH> <la moyenne des TA> <la moyenne des pulsations>```
  + Signature : ```21 <float> <float> <size_t>```
  + Événement : fin du programme
 
-22: Nombre des erreurs TH TA pulsation erreur
+22: Nombre de valeurs invalide pour TH TA pulsation
  + Définition : ```22 <compteur valeur invalide pour TH> <compteur valeur invalide pour TA> <compteur valeur invalide pour pulsations>```
  + Signature : ```22 <size_t> <size_t> <size_t>```
  + Événement : fin du programme
 
-23: Nombre des erreurs TH TA pulsation erreur
+23: Cumul des mots `ERREUR` pour TH TA pulsation
  + Définition : ```23 <cumul pour TH> <cumul pour TA> <cumul pour pulsations>```
  + Signature : ```23 <size_t> <size_t> <size_t>```
  + Événement : fin du programme
