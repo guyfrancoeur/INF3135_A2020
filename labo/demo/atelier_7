@@ -1,0 +1,255 @@
+typedef struct BinaryNode BinaryNode;
+
+struct BinaryNode {
+  int data;
+  int depth;
+  BinaryNode* left;
+  BinaryNode* right;
+  BinaryNode* parent;
+};
+
+void initTree(BinaryNode* _root);
+void initNode(BinaryNode* _node);
+BinaryNode* insertValue(BinaryNode* node, BinaryNode* parent, bool is_left, int data);
+BinaryNode* searchValue(BinaryNode* node, BinaryNode* parent, bool is_left, int data);
+void removeValue(BinaryNode* root, int data);
+void clean(BinaryNode* root);
+
+
+typedef struct linkedNode LinkedNode;
+
+// definit une structure pour le noeud de la liste chainee
+struct linkedNode {
+  int data;
+  LinkedNode* next;
+  LinkedNode* prev;
+};
+//typedef linkedNode LinkedNode;
+
+// definit une autre structure pour la liste entiere
+typedef struct linkedList {
+  LinkedNode* first;
+  LinkedNode* last;
+  unsigned int size;
+} LinkedList;
+
+void init(LinkedList* _liste);
+// ajouter un nouveau dernier
+unsigned int push(LinkedList* _liste, int _data);
+// retourner puis supprimer le dernier ajoute
+int pop(LinkedList* _liste);
+
+// Ex 4
+
+typedef struct vector {
+  int size;      // slots used so far
+  int capacity;  // total available slots
+  int* data;     // array of integers we're storing
+  // + extension ?
+  // + threshold ?
+} Vector_t;
+
+void initV(Vector_t* vector, int capacity);
+void extendV(Vector_t* vector, int how_many);
+void appendV(Vector_t* vector, int value);
+int getV(Vector_t* vector, int index);
+void setV(Vector_t* vector, int index, int value);
+void freeV(Vector_t* vector);
+
+
+
+// Ex 2
+
+void init(LinkedList* _liste) {
+  _liste->first = 0;
+  _liste->last = 0;
+  _liste->size = 0;
+}
+
+/*
+LinkedList* init() {
+  LinkedList* ptr = (LinkedList*)malloc(sizeof(LinkedList));// alloue la memoire pour la structure LinkedList
+  return ptr;
+}*/
+
+// ajouter un nouveau dernier
+unsigned int push(LinkedList* _liste, int _data) {
+  // create new node
+  LinkedNode* next = (LinkedNode*)malloc(sizeof(LinkedNode));
+  if (!next) {
+    return 1;
+  }
+  next->data = _data;
+  next->next = 0;
+  // attention si liste vide
+  if (!_liste->size) {
+    //(*_liste).first = next;
+    _liste->first = next;
+    _liste->last = next;
+    next->prev = 0;// car il n'y a pas de precedent
+  }
+  else {
+    next->prev = _liste->last;
+    _liste->last = next;//attache le nouveau a la liste
+  }
+  _liste->size += 1;
+  return 0;
+}
+
+// retourner puis supprimer le dernier ajoute
+int pop(LinkedList* _liste) {
+  // si liste vide alors ne rien supprimer et renvoyer -1
+  if (!_liste->size) return -1;
+
+  LinkedNode* last = _liste->last;
+  if (last) {
+    _liste->last = last->prev;// met a jour le nouveau dernier
+    _liste->last->next = 0;// marque le nouveau "prochain" comme vide
+    _liste->size -= 1;// diminue la taille de 1
+    int data = last->data;
+    free(last);// liberer la memoire contenue dans last
+    return data;
+  }
+  else return -2;
+}
+
+// Ex 4
+
+void initV(Vector_t* vector, int capacity) {
+  if (vector) {
+    vector->capacity = capacity;
+    vector->size = 0;
+    vector->data = (int*)malloc(capacity * sizeof(int));
+
+    // init memoire ?
+  }
+}
+
+void extendV(Vector_t* vector, int how_many) {
+  if (vector && vector->data) {
+    int* tmp = (int*)realloc(vector->data, (vector->capacity + how_many) * sizeof(int));
+    if (!tmp) return;
+    if (tmp != vector->data) {
+      for (int i = 0; i != vector->size; ++i) {
+        tmp[i] = vector->data[i];// copie des valeurs
+      }
+      free(vector->data);
+      vector->data = tmp;
+      vector->capacity = vector->capacity + how_many;
+    }
+  }
+}
+
+void appendV(Vector_t* vector, int value) {
+  if (vector && vector->data && vector->size >= 0 && vector->size < vector->capacity) {
+    vector->data[vector->size] = value;
+    vector->size += 1;
+    // ici call extend au besoin
+    if ((vector->size + 5) > vector->capacity) {
+      extendV(vector, 15);
+    }
+  }
+}
+
+int getV(Vector_t* vector, int index) {
+  return 0;//todo
+}
+
+void setV(Vector_t* vector, int index, int value) {
+  //todo
+}
+
+
+
+void freeV(Vector_t* vector) {
+  if (vector && vector->data) {
+    free(vector->data);
+    free(vector);
+  }
+}
+
+
+
+
+void initTree(BinaryNode* _root) {
+  initNode(_root);
+  _root->parent = 0;
+  _root->depth = 0;
+}
+
+void initNode(BinaryNode* _node) {
+  _node->left = 0;
+  _node->right = 0;
+  _node->data = 0;
+}
+BinaryNode* insertValue(BinaryNode* node, BinaryNode* parent, bool is_left, int data) {
+  // si le noeud n'existe pas, il faut le creer
+  if (!node) {
+    // en attendant:
+    BinaryNode* next = (BinaryNode*)malloc(sizeof(BinaryNode));
+    if (next) {
+      initNode(next);
+      // placement dans l'arbre
+      if (is_left) {
+        parent->left = next;
+      }
+      else {
+        parent->right = next;
+      }
+      next->parent = parent;
+    }
+    else {
+      // erreur
+    }
+  }
+  else {
+    if (node->depth == 0 && !node->left && !node->right) {
+      node->data = data;// insert first value only
+      return node;
+    }
+    else {
+      if (node->data < data) {
+        insertValue(node->left, node, true, data);// appel recursif sur le fils de "gauche"
+      }
+      else {
+        if (node->data > data) {
+          return insertValue(node->right, node, false, data);// appel recursif sur le fils de "droite"
+        }
+      }
+    }
+  }
+}
+
+BinaryNode* searchValue(BinaryNode* root, int data) {
+  // todo
+}
+
+void removeValue(BinaryNode* root, int data) {
+  // recursive too, 
+  // utiliser la meme mecanique que add/search
+  // pour trouver le bon noeud a delete
+  // free(node)
+}
+
+void clean(BinaryNode* root) {
+  // si on delete les fils de la racine, on peut pas y accer
+  // depth first postfix traversal du binary tree
+}
+
+int main(int argc, char** argv){
+ BinaryNode* root = (BinaryNode*)malloc(sizeof(BinaryNode));
+  if (root != 0) {
+    initTree(root);
+    insertValue(root, 5);
+    insertValue(root, 3000);
+    insertValue(root, 71);
+
+    BinaryNode* test1 = searchValue(root, 3000);
+    BinaryNode* test2 = searchValue(root, 65465);
+
+    removeValue(root, 5);
+
+    clean(root);
+  }
+  return 0;
+}
