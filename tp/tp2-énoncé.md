@@ -161,7 +161,7 @@ d'accepter:
 ```
 
 05: Échange de données - recevoir l'id et les id de premier niveau (idPN)
- + Définition : ```<timestamp> 05 <id> <idPN [idPN ...<sup>n</sup>]>```
+ + Définition : ```<timestamp> 05 <id> <idPN [idPN ...]>```
  + Signature : ```<size_t> 05 <size_t> <size_t [size_t ...]>```
 
 ```
