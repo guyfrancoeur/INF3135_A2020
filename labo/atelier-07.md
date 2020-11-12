@@ -16,8 +16,7 @@ Utiliser le même format de fichier pour tous les exercices.
 **Note**: Il est recommandé de versionner vos réponses aux exercices à l'aide
 de Git (en ligne de commande). Un seul dépôt est amplement suffisant pour tous les laboratoires.
 
- > > Pourquoi versionner vos exercices avec Git: afin de
-vous entraîner à utiliser le logiciel (les commandes) naturellement.
+ > > Pourquoi versionner vos exercices avec Git: afin de vous entraîner à utiliser le logiciel (les commandes) naturellement.
 ----
 
 ## 0a - Makefile
@@ -25,7 +24,7 @@ vous entraîner à utiliser le logiciel (les commandes) naturellement.
 Pour tous les exercices qui suivent, vous devez ajouter au fichier `Makefile` ce qui est nécessaire pour automatiser
 la production de vos exécutables (et/ou objets).  De plus, il est souhaitable de produire une cible de test pour chacun.
 
-Si vous cherchez des noms pour vos `exécutables` et `cibles` atelier_05_1, atelier_05_2, ... etc. Il s'agit, 
+Si vous cherchez des noms pour vos `exécutables` et `cibles` atelier_07_1, atelier_07_2, ... etc. Il s'agit, 
 de mot `atelier` ou `labo` suivi du numéro de l'atelier, et, terminant par le numéro de l'exercice.
 
 Il est fort possible que je visite votre dépôt pour vérifier vos avancements.
@@ -60,19 +59,19 @@ Il souhaitable d'utiliser `valgrind` pour compléter les exercices de cette séa
 + Q4. Produire un fichier test_stack.c qui référence et utilise les fichiers `.h` et `.c`.
 + Q5. Produire un fichier Makefile pour automatiser certaines tâches.
 
-## 2 (a et b) - Implémentation d'une Ensemble (*set*)
+## 2 (a et b) - Implémentation d'un Ensemble (*set*)
 
 Vous allez créer un seul fichier par cas et y mettre tout le code nécessaire. Pas de `.h` ici.
 
 - Un `set` contient des éléments uniques ou pas;
-  + Faire la version que vous voulez, mais la version avec des éléments unique est surement plus intéressante;
-- a) Des entiers numérique positif seulement, _N*_ = nombre Naturel = { 0, 1, ,2, ... };
+  + Faire la version que vous voulez, mais la version avec des éléments unique est surement plus intéressant;
+- a) Des entiers numériques positifs seulement, _N*_ = nombre naturel = { 0, 1, ,2, ... };
   + votre fichier sera nommé `set_number.c`;
 - b) Dans cet exercice vous allez gérer des éléments `chaine de caractères`.
   + votre fichier sera nommé `set_string.c`;
 
 Dans cet exercice vous allez gérer des éléments en fonction du cas.
-Les fonctionnalités suivante devraient être presentes :
+Les fonctionnalités suivantes devraient être présentées :
 
 - ajouter
 - supprimer
@@ -85,11 +84,11 @@ Complétez l'implémentation d'une structure de données de type "file" (en angl
 
 ```c
 typedef struct Queue_s {
-  int capacity;
-  int size;
-  int front;
-  int rear;
-  int *elements;
+  int capacity;  //total space used
+  int size;      //number of elements
+  int front;     //index of first
+  int rear;      //index of last 
+  int *elements; //data is here
 } Queue_t;
 
 extern Queue_t * initQ(int maxQueueSize);
