@@ -68,8 +68,9 @@ $ head -n 100 file.txt | ./tp2
 - Les fichiers seront maintenus dans la branche nommée `tp2`;
 - La branche `master` ou `main` comme `défaut` est pour les rétroactions et commentaires de l'enseignant;
 - Ne garder que les fichiers essentiels dans votre projet (dépôt distant);
-- La gestion des répertoires doit se faire de façon absolue (nommé) à partir de votre répertoire de travail;
-  + Vous ne pouvez pas utiliser `..` ou la commande `cd` dans votre travail;
+- La gestion des répertoires doit se faire de façon complète **à partir de votre répertoire de travail**;
+  + votre répotoire de travail étant : `./`; 
+  + Vous __ne pouvez pas__ utiliser `..` ou la commande `cd` dans votre travail;
 - La simplicité de vos livrables est exigée.  Aucun code ésotérique ne sera accepté.
 
 Définition :
