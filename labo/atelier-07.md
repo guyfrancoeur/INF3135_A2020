@@ -47,17 +47,14 @@ Il souhaitable d'utiliser `valgrind` pour compléter les exercices de cette séa
 - Les objets peuvent être insérés à tout moment, mais seulement le dernier (le plus récemment inséré) peut être retiré;
 
 ```c
-// stack.h
+// stack.c
 
 //libre à vous, faites votre implémentation
 //je vais vérifier les solutions
 ```
 
 + Q1. Quelle est la différence entre les mots anglais suivants : stack vs pile vs heap ?
-+ Q2. Produire un fichier d'entête (.h).
-+ Q3. Produire un fichier source (.c).
-+ Q4. Produire un fichier test_stack.c qui référence et utilise les fichiers `.h` et `.c`.
-+ Q5. Produire un fichier Makefile pour automatiser certaines tâches.
++ Q2. Produire un fichier Makefile pour automatiser certaines tâches.
 
 ## 2 (a et b) - Implémentation d'un Ensemble (*set*)
 
@@ -107,7 +104,7 @@ Questions:
 + Q1.  Quelle est la difficulté que vous avez rencontrée ?
 + Q2.  Avez-vous des fuites de mémoire ou des accès illicites à des zones mémoires (*out of bounds*) ?
 
-## 4 - Implémenter un Array Dynamique (*Vector*)
+## 4 - Implémenter un Array dynamique (*Vector*)
 
 Dans cet exercice vous devez construire une structure de données capable d'accepter un nombre `limite de int` d'éléments.
 Lors de la création, vous devez déterminer la capacité, exemple 2.  Lorsque cette capacité sera insuffisante, vous devrez
