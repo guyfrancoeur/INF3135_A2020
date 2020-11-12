@@ -38,7 +38,13 @@ Avez-vous fait des références absolues de répertoire ?  Oui, une correction s
 
 Afin de vous aider un peu plus, avez-vous remarqué que des commandes génèrent des sorties (messages) ou des fichiers.  Nous 
 ne voulons pas de log ou output en mode livraison (PRODUCTION).  De plus certaines commandes produisent des réactions interactives.
-Ceci n'est pas toujours souhaitable, veillez à ce que rien ne soit laissé au hasard.
+Ceci n'est pas toujours souhaitable, veillez à ce que rien ne soit laissé au hasard. Ici hasard ça veut dire tout le monde ne travaille
+pas de la même façon, vous ne programmer pas UNIQUEMENT vous.  Il y a des cas d'utilisation de make et Makefile à gérer.
+
+### Simple, Agile, Solide
+Ne rien laisser rien au hasard ne veut pas dire de se casser la tête ou se compliquer la vie, c'est le contraire.  Ça veut dire
+faites ce qui est nécessaire pour gagner en confiance et avoir du succès.  Quick wins first.  Le développement par petites victoires.
+Ce n'est pas utile de tout prévoir, nous sommes Agile, nous y reviendrons! Faites ce que vous êtes capable.
 
 ## 2 - Le nouveau tp1a.c
 
@@ -53,8 +59,8 @@ acceptables ? Avez-vous codé en dure des valeurs dans `tp1.c`?
 ### Livrable
 Vous allez produire un nouveau `tp1a.c` qui cette fois sera modulaire.  Vous allez créer deux fichiers `simple.h` et `simple.c` qui
 seront utilisés par le `tp1a.c`.  Dans `tp1a.c` il y aura seulement la fonction `main()`. Dans le `simple.h` les prototypes de fonctions.
-Dans `simple.c` les fonctions que vous avez déjà dans une première phase.  Dans la phase deux, vous allez réduire les valeurs codées en dure.
-Dans la phase trois, vous allez réduire le nombre de lignes ou fonctions si possible.
+Dans `simple.c` les fonctions que vous avez déjà dans une première phase.  Dans la phase deux, vous allez réduire (éléminer) les valeurs codées en dure.
+Dans la phase trois, vous allez réduire (optimiser) le nombre de lignes de code et de fonctions (si possible).
 
 ## 3 - valgrind
 
