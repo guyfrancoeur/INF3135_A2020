@@ -147,7 +147,7 @@ d'accepter:
 
 03: Pulsation par minute
  + Définition : ```<timestamp> 03 <pulsation par minute | ERREUR>```
- + Signature : ```<size_t> 03 <float|ERROR>```
+ + Signature : ```<size_t> 03 <float|ERREUR>```
 ```
 11112 03 157
 11900 03 ERREUR
@@ -186,7 +186,7 @@ Voici la liste des sorties possibles.
  + Signature : ```14 <size_t> <size_t> <float>```
  + Événement : 04
  
-15: Échange de données - evoyer mon id et les id de premier niveau (idPN)
+15: Échange de données - envoyer mon id et les id de premier niveau (idPN)
  + Définition : ```15 <timestamp> <id> <idPN [idPN ...<sup>n</sup>]>```
  + Signature : ```15 <size_t> <size_t> <size_t [size_t ...]>```
  + Événement : 05
