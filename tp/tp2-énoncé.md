@@ -147,7 +147,7 @@ d'accepter:
 
 03: Pulsation par minute
  + Définition : ```<timestamp> 03 <pulsation par minute | ERREUR>```
- + Signature : ```<size_t> 03 <float|ERROR>```
+ + Signature : ```<size_t> 03 <float|ERREUR>```
 ```
 11112 03 157
 11900 03 ERREUR
@@ -177,7 +177,7 @@ par votre programme. Certaines transactions en entrées vont nécessairement pro
 Voici la liste des sorties possibles.
 
 10: Changement de l'identifiant par défaut
- + Définition : ```10 <timestamp> <id> <puissance de l'émetteurs>```
+ + Définition : ```10 <timestamp> <id> <puissance de l'émetteur>```
  + Signature : ```10 <size_t> <size_t> <unsigned char>```
  + Événement : 00
 
@@ -186,7 +186,7 @@ Voici la liste des sorties possibles.
  + Signature : ```14 <size_t> <size_t> <float>```
  + Événement : 04
  
-15: Échange de données - evoyer mon id et les id de premier niveau (idPN)
+15: Échange de données - envoyer mon id et les id de premier niveau (idPN)
  + Définition : ```15 <timestamp> <id> <idPN [idPN ...<sup>n</sup>]>```
  + Signature : ```15 <size_t> <size_t> <size_t [size_t ...]>```
  + Événement : 05
@@ -206,7 +206,7 @@ Voici la liste des sorties possibles.
  + Signature : ```23 <size_t> <size_t> <size_t>```
  + Événement : fin du programme
  
-### Résulats (exemple visuel)
+### Résultats (exemple visuel)
 
 #### Directives 
 - L'affichage du type `float` se fera avec une seule décimale
@@ -332,7 +332,7 @@ validerTA_5
    ## Statut et auto-évaluation
 
    <indiquez si le projet est complété ou s'il y a des bogues>
-   <mon travail vaut quelques points en fonction du barème>
+   <je suis satisfait ou pas de mon livrable, pour les raisons suivantes ...>
    
 ~~~~
 
