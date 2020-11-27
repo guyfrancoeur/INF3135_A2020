@@ -1,0 +1,268 @@
+# Travail pratique 3
+
+#### Guy Francoeur :copyright: édition A2020
+
+  L'objectif est de continuer notre initiation à la programmation avec le langage C. Cette fois nous allons
+  un peu plus loin dans notre processus de création et de réflexion.  Vous devez dans ce travail livrer un
+  programme de qualité irréprochable qui tient compte de critères déjà vus. Spécifiquement vous devez lire
+  et produire des données sur l'entrée et la sortie standard respectivement.
+  
+  De plus, vos sources seront maintenues dans un gestionnaire de version/source de type git.
+  
+  La compréhension et la prise de décision sont aussi des objectifs à atteindre durant la mise en oeuvre,
+  la réalisation, de vos travaux.
+  
+  Le travail est à réaliser **individuellement**.
+
+## Sujet (rappel)
+
+Chaque session nous avons un sujet unique que nous traînons pendant les 15 semaines.  Cette fois encore,
+je continue avec cette bonne habitude.  L'avantage est que nous n'avons pas à apprendre des sujets différents
+pour chaque travail pratique.  Ainsi nous pouvons vraiment concentrer l'effort sur ce qui est important, 
+c'est-à-dire la construction et la maintenance de logiciels.  Pour nous c'est avec le langage C.  Un langage
+de programmation important qui produit des logiciels dits performants, mais il n'en serait rien sans des
+programmeurs qui savent ce qu'ils font.
+
+TCV est un projet d'actualité, qui veut dire : tous contrent le virus (ou les virus). Nous allons tenter
+ensemble de réaliser des programmes qui vont permettre de lutter et prévenir dans un temps très court
+la dispersion du virus. Concrètement vous allez programmer un module (un Beacon) qui traite de l'information
+reçue et qui réagit en émettant à son tour des transactions.
+
+## Description du travail
+
+  Vous devez dans ce travail apporter des modifications au code existant. Vous ajouterez une fonction de gestion 
+  des arguments (options) de la ligne de commande.
+  
+  Ce que nous devons retrouver dans le fichier `tp3.c` : 
+   - Uniquement le code de la fonction `int main(int argc, char *argv[])`.
+   - Le fichier ne doit pas contenir plus de 50 lignes, une instruction par ligne.
+   
+  Ce que nous devons retrouver dans le fichier `malib.h` et `malib.c` : 
+   - Le code de la fonction `int cmd(...)`.
+   - La fonction `cmd(...)` gère les arguments de la ligne de commande.
+   - Il y aura surement d'autres fonctions dans `malib.h` et `malib.c`.
+   
+  Ce que vous devez faire : 
+   - Compter, maintenir et afficher le nombre transactions selon les options demandées au lancement du logiciel.
+  
+  Ce travail est une modification du `tp2` vous devez donc modifier ce que vous avez déjà. Vous allez donc produire le `tp3.c`
+  à partir des sources du `tp2.c`. Lorsque vous prêt vous allez produire un exécutable nommé `tp3`.
+  
+  Le programme exécutable peut être lancé en ligne de commande avec différentes syntaxes :
+
+```bash
+# sans option
+$ ./tp3
+$ cat file.dat | ./tp3
+$ head -n 100 file.txt| tail -n 25 | ./tp3
+
+# avec option(s) de la ligne de commande (-d détaillé, -s sommaire, -t tranquille -i invalide)
+$ ./tp3 -s -d -i
+$ ./tp3 -s
+$ ./tp3 -t
+...
+```
+
+#### Vous devez réaliser le travail selon les contraintes suivantes:
+
+- Votre travail sera réalisé et livré dans le dépôt distant toujours **privé**;
+- Les fichiers d'entête :
+  + standard sont tous permis;
+  + `<unistd.h>`, `<windows.h>` ne sont pas autorisé;
+- Vous devez utiliser les fichiers `tcv.h` et `tcv.o` qui sont fournis :
+  + dans `tp3.zip` ou `tp2.zip` ou `tp1.zip`;
+    + Votre Makefile est surement la bonne place pour gérer cela;
+- Contributions Q&R
+  + Seront **toutes** faites dans le forum de discussion GitHub section *Issues*;
+  + Aucun commentaire personnel ou politique ne sera toléré;
+  + Vous devez contribuer de façon professionnelle;
+  + Le nombre de contributions est limité à trois, questions et/ou réponses;
+  + Une demande de solution, (validation ou réponse), 50% de la note sera amputée, exemple :
+    + Comment devrais-je faire ... ?;
+    + Je voudrais valider ... ?; `(je vais surement évaluer votre tp, soyez patient)` 😂
+    + Est-ce que je devrais ... ?;
+- Branche git :
+  + Les fichiers seront maintenus dans la branche nommée `tp3`;
+  + Aucun fichier dans la branche `master` ou `main` (par défaut);
+  + La branche `master` est pour les rétroactions et commentaires de l'enseignant;
+- Ne garder que les fichiers essentiels dans votre projet (dépôt distant);
+- La gestion des répertoires 
+  + doit se faire de façon complète **à partir de votre répertoire de travail**;
+  + votre répertoire de travail étant : `./`;
++ La note zéro est attribuée si :
+  + Vous utilisez `..` avec la commande `cd`;
+  + Vous utilisez `..` ou `*` avec la commande `rm`;
+   si vous descendez, dans la structure, en deçà de votre répertoire de travail;
+- La simplicité de vos livrables est exigée.  Aucun code ésotérique ne sera accepté.
+
+Définition :
+ + ésotérique : Se dit d'un mode d'expression, d'une œuvre qui n'est compréhensible que des initiés;
+
+Synonyme :
+ + mystérieux : Qui est incompréhensible ou inexplicable;
+
+Source : Larousse FR
+
+ 
+### Rôle de votre programme
+
+ Le rôle de votre programme est de lire des transactions (déjà fait tp2).  Le `tp3` ajoute une fonctionnalité qui compte
+ de nombre de lignes lues et selon le cas affichera les informations recueillies. Les options suivantes doivent être gérées :
+ 
+ 
+Voici les cas et les traitements en fonction des options : 
+ - option `-i` `information invalide`
+   + Lorsqu'un code de transaction n'est reconnu;
+   + Lorsque le timestamp est inférieur au temps précédent;
+ - option `-d` `information détaillée`
+   + Le nombre de transactions pour chacun des types de transaction;
+ - option `-s` `information sommaire`
+   + Le nombre total de transactions valides;
+   + Le nombre total de transactions reçues;
+ - option `-t` `mode tranquille`
+   + Le mode tranquille n'affiche pas transaction en sortie;
+
+### Ce qui doit être produit
+
+#### exemple avec les options `-t -d -s -i`
+```
+version #: 0.0.1008
+information invalide
+  trx non reconnue : 10
+  trx avec ts non sequentiel : 5
+information detaillee
+  trx 01 : 4
+  trx 02 : 3
+  trx 03 : 4
+  trx 04 : 4
+  trx 05 : 10
+  le dernier ts lu : 1564
+information sommaire
+  nbr trx valides : 25
+  nbr trx (total) : 40
+```
+NOTE : il n'y a pas de caractères accentués. Le format de sortie est important cette fois.
+
+## Makefile
+
+  Il est obligatoire d'inclure un fichier `Makefile` dans votre projet pour faciliter la compilation et
+  les autres actions requises. Celui-ci doit minimalement offrir les services suivants :
+  
+- Le Makefile
+  + La commande `make tp3` est commande pour construire l'exécutable `tp3`;
+  + La commande `make` employée seule devra exécuter la cible `default` qui est dépendante de tp3;
+
+- Lorsqu'on entre `make clean`, le projet revient dans son état d'origine, c'est-à-dire
+  son état lors de la récupération initiale;
+
+- Lorsqu'on entre `make lib`, le téléchargement du fichier 
+  https://github.com/guyfrancoeur/INF3135_A2020/raw/master/tp/tp3.zip
+  se fait de façon automatique dans un répertoire (./data). Par la suite, la décompression est nécessaire;
+
+- Les programmes seront compilés et évalués avec les options suivant `-Wall -Werrorvla -pedantic -std=c11`;
+
+### Complément
+
++ `-std=c11` indique au compilateur de traiter le code selon le standard C11 (2011) (et donc 
+de rejeter certaines extensions comme celles de GNU par exemple);
++ `-pedantic` permet de signaler les avertissements, ou warnings, selon la norme ISO;
++ `-Wall` permet de signaler un grand nombre d'autres warnings décrit dans le man gcc;
++ `-Werror=vla` indique au compilateur que la déclaration de tableaux de longueur variable n'est pas permise.
+
+En effet, la grande permissivité de C réduit l'aide du compilateur (lorsqu'il n'y a pas d'option)
+pour traquer certaines erreurs et les mauvaises pratiques de programmation.
+
+## .gitignore
+
++ Votre projet (dépôt distant) doit contenir uniquement les fichiers strictement nécessaires; 
++ Votre projet ne doit pas contenir de fichiers `objet` ou `binaire` par exemple.
++ Votre projet ne doit pas contenir de fichiers *.guy;
+
+## README.md
+
+  Votre projet doit contenir un fichier nommé `README.md` qui décrit le contenu et qui **respecte le
+  format Markdown**. Il doit minimalement contenir les informations ci-bas :
+  
+  Ajouter un badge à votre `README.md`.  Le badge sera en mis à jour par votre fichier `YAML`;
+
+~~~~
+   # Travail pratique X
+
+   ## Description
+
+   <description du projet en quelques phrases>
+   <mentionner le contexte (cours, sigle, université, etc.)>
+
+   ## Auteur
+
+   <prénom et nom> (<code permanent>)
+
+   ## Fonctionnement
+
+   <expliquez brièvement comment faire fonctionner votre projet, en inscrivant
+   au moins deux exemples d'utilisation (commande lancée et résultat affiché)>
+
+   ## Contenu du projet
+
+   <décrivez brièvement chacun des fichiers contenus dans le projet (une phrase
+   par fichier)>
+
+   ## Processus de réflexion et démarche 
+   
+   <inclure par référence le fichier reflexion.md>
+
+   ## Références
+
+   <citez vos sources ici>
+
+   ## Statut et auto-évaluation
+
+   <indiquez si le projet est complété ou s'il y a des bogues>
+   <mon travail vaut quelques points en fonction du barème>
+   
+~~~~
+
+# Remise
+
+  La totalité de votre travail doit être remise au plus tard le 20 décembre 2020 23h59 ET (heure du Québec).
+  Après cette date, une pénalité de **10 points par jour** de retard sera appliquée.
+
+  La remise se fait **obligatoirement** par l'intermédiaire de la plateforme `Github https://github.com/` 
+  
+  **Aucune remise par courriel ne sera acceptée** (le travail sera considéré comme non remis).
+
+  Le nom de votre dépôt doit être `inf3135-a2020` (en minuscules). Vous devez ajouter l'utilisateur
+  `guyfrancoeur` comme collaborateur. Ceci permettra de récupérer et possiblement de déposer quelques commentaires
+  (fichiers) dans votre projet.
+
+  Votre projet devrait minimalement contenir, à la racine du dépôt, les fichiers de type `Unix/Linux` et `ascii` suivants :
+
+- Un fichier `tp3.c` contenant votre fonction `main`;
+- Les fichiers `malib.c` et `malib.h`;
+- Un fichier `README.md` selon le format proposé;
+- Un fichier nommé `Makefile` complet et optimal;
+- Un fichier nommé `cp.txt` avec votre code permanent en majuscule;
+- Un fichier `.gitignore`.
+
+  L'usage de la commande `rm` dans votre travail est permise.  Avec de grands pouvoirs viennent de grandes responsabilités. 
+
+  Les travaux seront corrigés sur le serveur Java. Vous devez donc vous assurer
+  que votre programme fonctionne **tel que livré, sans modification** sur celui-ci.
+  
+# Barème de correction
+
+| Critère | Sous-critère | Points |
+| ------- |:------------ | ------:|
+| Exigences         |                                                | 5.0   |
+| Compilation       |                                                | 2.0   |
+| Makefile          |                                                | 2.0   |
+| Fonctionnabilité  | tests seront lancés (comparaison binaire)      | 7.0   |
+| Branche (git)     | nommée tp3, branche defaut nommé vide          | 2.0   |
+| Issues (git)      | intervention                                   | 1.0   |
+| Optimal (git)     | clean                                          | 1.0   |
+| Bonus             | à venir                                        | 1.0   |
+| **Total**         |                                                | 21/20 |
+
+FIN.
+---
+Guy Francoeur :copyright: édition A2020
