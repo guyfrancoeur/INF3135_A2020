@@ -86,14 +86,18 @@ $ ./tp3 -t
   + Aucun fichier dans la branche `master` ou `main` (par défaut);
   + La branche `master` est pour les rétroactions et commentaires de l'enseignant;
 - Ne garder que les fichiers essentiels dans votre projet (dépôt distant);
-- La gestion des répertoires 
+- La gestion des répertoires :
   + doit se faire de façon complète **à partir de votre répertoire de travail**;
   + votre répertoire de travail étant : `./`;
 + La note zéro est attribuée si :
-  + Vous utilisez `..` avec la commande `cd`;
-  + Vous utilisez `..` ou `*` avec la commande `rm`;
-   si vous descendez, dans la structure, en deçà de votre répertoire de travail;
-- La simplicité de vos livrables est exigée.  Aucun code ésotérique ne sera accepté.
+  + vous utilisez `..` avec la commande `cd`;
+  + vous utilisez `..` ou `*` avec la commande `rm`;
+  + vous descendez, dans la structure, en deçà de votre répertoire de travail;
+- Idéalement :
+  + un code simple est facile à travailler, donc aucun code ésotérique;
+  + vous devez produire du code juste, donc faites ce que vous connaissez;
+  + vous devez produire du code robuste, donc débarrassez-vous du code instable;
+  + n'attendez pas à la dernière minute, cela risque de devenir stressant.
 
 Définition :
  + ésotérique : Se dit d'un mode d'expression, d'une œuvre qui n'est compréhensible que des initiés;
@@ -115,7 +119,7 @@ Voici les cas et les traitements en fonction des options :
    + Lorsqu'un code de transaction n'est reconnu;
    + Lorsque le timestamp est inférieur au temps précédent;
  - option `-d` `information détaillée`
-   + Le nombre de transactions pour chacun des types de transaction;
+   + Le nombre de transactions pour chacun des types de transactions;
  - option `-s` `information sommaire`
    + Le nombre total de transactions valides;
    + Le nombre total de transactions reçues;
@@ -257,7 +261,7 @@ pour traquer certaines erreurs et les mauvaises pratiques de programmation.
 | Compilation       |                                                | 2.0   |
 | Makefile          |                                                | 2.0   |
 | Fonctionnabilité  | tests seront lancés (comparaison binaire)      | 7.0   |
-| Branche (git)     | nommée tp3, branche defaut nommé vide          | 2.0   |
+| Branche (git)     | nommée tp3 dev, branche défaut (main) vide     | 2.0   |
 | Issues (git)      | intervention                                   | 1.0   |
 | Optimal (git)     | clean                                          | 1.0   |
 | Bonus             | à venir                                        | 1.0   |
