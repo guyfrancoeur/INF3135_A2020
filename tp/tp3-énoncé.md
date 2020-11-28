@@ -12,7 +12,9 @@
   La compréhension et la prise de décision sont aussi des objectifs à atteindre durant la mise en oeuvre,
   la réalisation, de vos travaux.
   
-  Le travail est à réaliser **individuellement**.
+```  
+  Le travail est à réaliser individuellement, qui veut dire seul, pas de travail d'équipe.
+```
 
 ## Sujet (rappel)
 
@@ -46,7 +48,7 @@ reçue et qui réagit en émettant à son tour des transactions.
    - Compter, maintenir et afficher le nombre transactions selon les options demandées au lancement du logiciel.
   
   Ce travail est une modification du `tp2` vous devez donc modifier ce que vous avez déjà. Vous allez donc produire le `tp3.c`
-  à partir des sources du `tp2.c`. Lorsque vous prêt vous allez produire un exécutable nommé `tp3`.
+  à partir des sources du `tp2.c`. Lorsque vous serez prêt, compilez les sources afin de produire un exécutable nommé `tp3`. (merci PO)
   
   Le programme exécutable peut être lancé en ligne de commande avec différentes syntaxes :
 
@@ -65,6 +67,7 @@ $ ./tp3 -t
 
 #### Vous devez réaliser le travail selon les contraintes suivantes:
 
+- Profitez de la période de questions en classe pour vos questions;
 - Votre travail sera réalisé et livré dans le dépôt distant toujours **privé**;
 - Les fichiers d'entête :
   + standard sont tous permis;
@@ -73,7 +76,7 @@ $ ./tp3 -t
   + dans `tp3.zip` ou `tp2.zip` ou `tp1.zip`;
     + Votre Makefile est surement la bonne place pour gérer cela;
 - Contributions Q&R
-  + Seront **toutes** faites dans le forum de discussion GitHub section *Issues*;
+  + Seront faites dans le forum de discussion GitHub section *Issues*;
   + Aucun commentaire personnel ou politique ne sera toléré;
   + Vous devez contribuer de façon professionnelle;
   + Le nombre de contributions est limité à trois, questions et/ou réponses;
@@ -81,15 +84,19 @@ $ ./tp3 -t
     + Comment devrais-je faire ... ?;
     + Je voudrais valider ... ?; `(je vais surement évaluer votre tp, soyez patient)` 😂
     + Est-ce que je devrais ... ?;
+    + J'ai de la misère ...; contacter moi directement je vais prendre une décision en fonction du temps;
+    + ... une demande de solution déguisé en demande d'aide ne sera surement pas une bonne idée;
+    + ... une demande de compréhension déguisé en question n'est surement pas du travail individuel;
 - Branche git :
   + Les fichiers seront maintenus dans la branche nommée `tp3`;
   + Aucun fichier dans la branche `master` ou `main` (par défaut);
   + La branche `master` est pour les rétroactions et commentaires de l'enseignant;
 - Ne garder que les fichiers essentiels dans votre projet (dépôt distant);
 - La gestion des répertoires :
-  + doit se faire de façon complète **à partir de votre répertoire de travail**;
+  + doit se faire de façon explicite **à partir de votre répertoire de travail**;
   + votre répertoire de travail étant : `./`;
 + La note zéro est attribuée si :
+  + vous utilisez `~/`;
   + vous utilisez `..` avec la commande `cd`;
   + vous utilisez `..` ou `*` avec la commande `rm`;
   + vous descendez, dans la structure, en deçà de votre répertoire de travail;
