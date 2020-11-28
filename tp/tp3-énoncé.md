@@ -89,8 +89,8 @@ $ ./tp3 -t
     + ... une demande de compréhension déguisé en question n'est surement pas du travail individuel;
 - Branche git :
   + Les fichiers seront maintenus dans la branche nommée `tp3`;
-  + Aucun fichier dans la branche `master` ou `main` (par défaut);
-  + La branche `master` est pour les rétroactions et commentaires de l'enseignant;
+  + Aucun fichier dans la branche nommé `main` (branche par défaut);
+  + La branche `main` est pour les rétroactions et commentaires de l'enseignant;
 - Ne garder que les fichiers essentiels dans votre projet (dépôt distant);
 - La gestion des répertoires :
   + doit se faire de façon explicite **à partir de votre répertoire de travail**;
