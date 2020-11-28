@@ -104,6 +104,9 @@ $ ./tp3 -t
   + un code simple est facile à travailler, donc aucun code ésotérique;
   + vous devez produire du code juste, donc faites ce que vous connaissez;
   + vous devez produire du code robuste, donc débarrassez-vous du code instable;
+  + vous devez produire un Makefile qui n'a pas d'effet de bord ou :
+    + qui est sans effet secondaire;
+    + qui n'a pas un comportement hasardeux;
   + n'attendez pas à la dernière minute, cela risque de devenir stressant.
 
 Définition :
@@ -117,7 +120,7 @@ Source : Larousse FR
  
 ### Rôle de votre programme
 
- Le rôle de votre programme est de lire des transactions (déjà fait tp2).  Le `tp3` ajoute une fonctionnalité qui compte
+ Le rôle de votre programme est de lire des transactions (déjà fait durant le tp2).  Le `tp3` ajoute une fonctionnalité qui compte
  de nombre de lignes lues et selon le cas affichera les informations recueillies. Les options suivantes doivent être gérées :
  
  
