@@ -94,6 +94,15 @@ Merci, bonne session à tous.
 Guy Francoeur
 
 
+Citation :
+```
+“L'enseignement devrait être ainsi : celui qui le reçoit le recueille comme un don inestimable mais jamais comme une contrainte pénible.” -Albert Einstein
+
+“Une personne qui n'a jamais commis d'erreurs n'a jamais tenté d'innover.” -Albert Einstein
+
+“C'est le rôle essentiel du professeur d'éveiller la joie de travailler et de connaître.” -Albert Einstein
+```
+
 #### Référence: 
 
 Ce cours est basé sur les travaux d'Alexandre Blondin Massé, Professeur, que je remercie pour sa générosité et sa collaboration.
