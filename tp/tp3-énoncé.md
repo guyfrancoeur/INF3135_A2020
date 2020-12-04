@@ -207,7 +207,7 @@ pour traquer certaines erreurs et les mauvaises pratiques de programmation.
   Votre projet doit contenir un fichier nommé `README.md` qui décrit le contenu et qui **respecte le
   format Markdown**. Il doit minimalement contenir les informations ci-bas :
   
-  Ajouter un badge à votre `README.md`.  Le badge sera en mis à jour par votre fichier `YAML`;
+  Les badges ajoutés à votre `README.md` seront en mis à jour par votre fichier `YAML`;
 
 ~~~~
    # Travail pratique X
