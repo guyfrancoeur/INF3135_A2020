@@ -62,8 +62,8 @@ $ ./tp3 -t
 #### Vous devez réaliser le travail selon les contraintes suivantes:
 
   Ce que nous devons retrouver dans le fichier `tp3.c` : 
-   - Uniquement le code de la fonction `int main(int argc, char *argv[])`.
-   - Le fichier ne doit pas contenir plus de 50 lignes, une instruction par ligne.
+   - uniquement le code de la fonction `int main(int argc, char *argv[])`.
+   - ne doit pas contenir plus de 50 lignes, une instruction par ligne.
    
 >  Ce que vous devez retrouver dans le fichier `outil3.h` et `outil3.c`:
 >   - Ce module est indépendant;
@@ -72,11 +72,11 @@ $ ./tp3 -t
 >     + La fonction gère le calcul de la distance en mètres;
 >   - Le code source de la fonction `int cmd(...)`;
 >     + La fonction gère les arguments de la ligne de commande;
->   - La MACRO `_OUTIL3_` doit exister pour la détection des inclusions multiple;
+>   - La MACRO `_OUTIL3_H_` doit exister pour la détection des inclusions multiple;
 >   - Limiter le code source à 99 lignes ou moins, une instruction par ligne.
    
   Ce que nous devons retrouver dans le fichier `malib.h` et `malib.c` : 
-   - limiter le code source à 199 lignes et moins, une instruction par ligne.
+> - Limiter le code source à 199 lignes et moins, une instruction par ligne.
 - Profitez de la période de questions en classe pour vos questions;
 - Votre travail sera réalisé et livré dans le dépôt distant toujours **privé**;
 - Les fichiers d'entête :
