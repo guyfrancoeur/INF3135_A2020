@@ -96,7 +96,8 @@ Guy Francoeur
 
 Citation :
 ```
-“L'enseignement devrait être ainsi : celui qui le reçoit le recueille comme un don inestimable mais jamais comme une contrainte pénible.” -Albert Einstein
+“L'enseignement devrait être ainsi : celui qui le reçoit le recueille comme un don inestimable 
+mais jamais comme une contrainte pénible.” -Albert Einstein
 
 “Une personne qui n'a jamais commis d'erreurs n'a jamais tenté d'innover.” -Albert Einstein
 
