@@ -94,7 +94,6 @@ Merci, bonne session à tous.
 Guy Francoeur
 
 
-Citation :
 ```
 “L'enseignement devrait être ainsi : celui qui le reçoit le recueille comme un don inestimable 
 mais jamais comme une contrainte pénible.” -Albert Einstein
