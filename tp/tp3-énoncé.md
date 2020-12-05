@@ -84,7 +84,7 @@ $ ./tp3 -t
   + `<unistd.h>`, `<windows.h>` ne sont pas autorisé;
 - Vous devez utiliser les fichiers `tcv.h` et `tcv.o` qui sont fournis :
   + dans `tp3.zip` ou `tp2.zip` ou `tp1.zip`;
-    + Votre Makefile est surement la bonne place pour gérer cela;
+    + Votre Makefile est surement la bonne place pour gérer cela (simplement svp);
 - Contributions Q&R
   + Seront faites dans le forum de discussion GitHub section *Issues*;
   + Aucun commentaire personnel ou politique ne sera toléré;
@@ -106,17 +106,22 @@ $ ./tp3 -t
   + doit se faire de façon explicite **à partir de votre répertoire de travail**;
   + votre répertoire de travail étant : `./`;
 + La note zéro est attribuée si :
-  + vous utilisez `~/`;
+  + vous utilisez `~` ou `~/`;
   + vous utilisez `..` avec la commande `cd`;
   + vous utilisez `..` ou `*` avec la commande `rm`;
   + vous descendez, dans la structure, en deçà de votre répertoire de travail;
+> + Vous ne pouvez pas utilser les commandes suivantes dans le `Makefile` ou dans un script appelé par le `Makefile` :
+>   - `cd`, `mv`
+>   - `mkdir` dans la cible `lib`;
+>   - `rm` dans les autres cibles que `clean`;
 - Idéalement :
   + un code simple est facile à travailler, donc aucun code ésotérique;
   + vous devez produire du code juste, donc faites ce que vous connaissez;
   + vous devez produire du code robuste, donc débarrassez-vous du code instable;
-  + vous devez produire un Makefile qui n'a pas d'effet de bord ou :
+  + vous devez produire un `Makefile` qui n'a pas d'effet de bord ou :
     + qui est sans effet secondaire;
     + qui n'a pas un comportement hasardeux;
+>    + qui n'appel pas des scripts;
   + n'attendez pas à la dernière minute, cela risque de devenir stressant.
 
 Définition :
