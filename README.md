@@ -123,6 +123,10 @@ Ce cours est basé sur les travaux d'Alexandre Blondin Massé, Professeur, que j
 + [Espace disque et Quota](https://wiki.uqam.ca/display/SWSI/Labunix#Labunix-Espacedisque/Quota)
 + [clé putty ssh/rsa](https://devops.ionos.com/tutorials/use-ssh-keys-with-putty-on-windows/)
 
+#### Outils 🦊
++ [Bash online executor](https://www.tutorialspoint.com/execute_bash_online.php)
++ [C online compiler](https://www.onlinegdb.com/online_c_compiler)
+
 ----
 
 ##### Auteur Guy Francoeur édition A2020
