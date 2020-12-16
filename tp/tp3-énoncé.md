@@ -288,8 +288,8 @@ pour traquer certaines erreurs et les mauvaises pratiques de programmation.
 | Exigences         | outil3.c, malib.c, ...                                 | 4.0   |
 | Compilation       |                                                        | 1.0   |
 | Makefile          | plusieurs critères seront évalués                      | 1.0   |
-| test-c.yml        | produire le résultat dans compilation.md + badge       | 1.0   |
-| test-f.yml        | résultat de tests dans fonctionnel.md + badge          | 1.0   |
+| test-c.yml        | produire le résultat dans compilation.md               | 1.0   |
+| test-f.yml        | résultat de tests dans fonctionnel.md                  | 1.0   |
 | badges yaml       | mettre les deux badges dans README.md                  | 2.0   |
 | Fonctionnabilité  | tests seront lancés (comparaison binaire)                 | 7.0   |
 | Branche (git)     | nommée tp3 (pour votre dev), branche défaut (main) vide   | 1.0   |
