@@ -188,7 +188,7 @@ NOTE : il n'y a pas de caractères accentués. Le format de sortie est important
   https://github.com/guyfrancoeur/INF3135_A2020/raw/master/tp/tp3.zip
   se fait de façon automatique dans un répertoire (./data). Par la suite, la décompression est nécessaire;
 
-- Les programmes seront compilés et évalués avec les options suivant `-Wall -Werrorvla -pedantic -std=c11`;
+- Les programmes seront compilés et évalués avec les options suivant `-Wall -Werror=vla -pedantic -std=c11`;
 
 ### Complément
 
