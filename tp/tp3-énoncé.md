@@ -33,17 +33,11 @@ reçue et qui réagit en émettant à son tour des transactions.
 ## Description du travail
 
   Vous devez dans ce travail apporter des modifications au code existant. Vous ajouterez une fonction de gestion 
-  des arguments (options) de la ligne de commande.
+  des arguments (options) de la ligne de commande.  Vous devez créer un programme juste et robuste.  Des fichiers
+  (modules) seront utilisés pour garder un code propre et lisible.  L'utilisation de toutes les notions vue cette
+  année est souhaitable. Finalement, le langage dans les mains d'un programmeur tel que vous peut produire, doit
+  produire, un exécutable performant.  Votre exécutable sera soumis à un stress incroyable. 😜
   
-  Ce que nous devons retrouver dans le fichier `tp3.c` : 
-   - Uniquement le code de la fonction `int main(int argc, char *argv[])`.
-   - Le fichier ne doit pas contenir plus de 50 lignes, une instruction par ligne.
-   
-  Ce que nous devons retrouver dans le fichier `malib.h` et `malib.c` : 
-   - Le code de la fonction `int cmd(...)`.
-   - La fonction `cmd(...)` gère les arguments de la ligne de commande.
-   - Il y aura surement d'autres fonctions dans `malib.h` et `malib.c`.
-   
   Ce que vous devez faire : 
    - Compter, maintenir et afficher le nombre transactions selon les options demandées au lancement du logiciel.
   
@@ -67,6 +61,22 @@ $ ./tp3 -t
 
 #### Vous devez réaliser le travail selon les contraintes suivantes:
 
+  Ce que nous devons retrouver dans le fichier `tp3.c` : 
+   - uniquement le code de la fonction `int main(int argc, char *argv[])`.
+   - ne doit pas contenir plus de 50 lignes, une instruction par ligne.
+   
+>  Ce que vous devez retrouver dans le fichier `outil3.h` et `outil3.c`:
+>   - Ce module est indépendant;
+>     + Aucune dépendance sur des librairies personnelles ou non standard au langage C;
+>   - Le code source de la fonction `float distance(int _signal, int _power)`;
+>     + La fonction gère le calcul de la distance en mètres;
+>   - Le code source de la fonction `int cmd(...)`;
+>     + La fonction gère les arguments de la ligne de commande;
+>   - La MACRO `_OUTIL3_H_` doit exister pour la détection des inclusions multiple;
+>   - Limiter le code source à 99 lignes ou moins, une instruction par ligne.
+   
+  Ce que nous devons retrouver dans le fichier `malib.h` et `malib.c` : 
+> - Limiter le code source à 199 lignes et moins, une instruction par ligne.
 - Profitez de la période de questions en classe pour vos questions;
 - Votre travail sera réalisé et livré dans le dépôt distant toujours **privé**;
 - Les fichiers d'entête :
@@ -74,7 +84,7 @@ $ ./tp3 -t
   + `<unistd.h>`, `<windows.h>` ne sont pas autorisé;
 - Vous devez utiliser les fichiers `tcv.h` et `tcv.o` qui sont fournis :
   + dans `tp3.zip` ou `tp2.zip` ou `tp1.zip`;
-    + Votre Makefile est surement la bonne place pour gérer cela;
+    + Votre Makefile est surement la bonne place pour gérer cela (simplement svp);
 - Contributions Q&R
   + Seront faites dans le forum de discussion GitHub section *Issues*;
   + Aucun commentaire personnel ou politique ne sera toléré;
@@ -85,8 +95,8 @@ $ ./tp3 -t
     + Je voudrais valider ... ?; `(je vais surement évaluer votre tp, soyez patient)` 😂
     + Est-ce que je devrais ... ?;
     + J'ai de la misère ...; contacter moi directement je vais prendre une décision en fonction du temps;
-    + ... une demande de solution déguisé en demande d'aide ne sera surement pas une bonne idée;
-    + ... une demande de compréhension déguisé en question n'est surement pas du travail individuel;
+    + ... une demande de solution déguisée en demande d'aide ne sera surement pas une bonne idée;
+    + ... une demande de compréhension déguisée en question n'est surement pas du travail individuel;
 - Branche git :
   + Les fichiers seront maintenus dans la branche nommée `tp3`;
   + Aucun fichier dans la branche nommé `main` (branche par défaut);
@@ -96,17 +106,22 @@ $ ./tp3 -t
   + doit se faire de façon explicite **à partir de votre répertoire de travail**;
   + votre répertoire de travail étant : `./`;
 + La note zéro est attribuée si :
-  + vous utilisez `~/`;
+  + vous utilisez `~` ou `~/`;
   + vous utilisez `..` avec la commande `cd`;
   + vous utilisez `..` ou `*` avec la commande `rm`;
   + vous descendez, dans la structure, en deçà de votre répertoire de travail;
+> + Vous ne pouvez pas utilser les commandes suivantes dans le `Makefile` ou dans un script appelé par le `Makefile` :
+>   - `cd`, `mv`
+>   - `mkdir` dans la cible `lib`;
+>   - `rm` dans les autres cibles que `clean`;
 - Idéalement :
   + un code simple est facile à travailler, donc aucun code ésotérique;
   + vous devez produire du code juste, donc faites ce que vous connaissez;
   + vous devez produire du code robuste, donc débarrassez-vous du code instable;
-  + vous devez produire un Makefile qui n'a pas d'effet de bord ou :
+  + vous devez produire un `Makefile` qui n'a pas d'effet de bord ou :
     + qui est sans effet secondaire;
     + qui n'a pas un comportement hasardeux;
+>    + qui n'appel pas des scripts;
   + n'attendez pas à la dernière minute, cela risque de devenir stressant.
 
 Définition :
@@ -173,7 +188,7 @@ NOTE : il n'y a pas de caractères accentués. Le format de sortie est important
   https://github.com/guyfrancoeur/INF3135_A2020/raw/master/tp/tp3.zip
   se fait de façon automatique dans un répertoire (./data). Par la suite, la décompression est nécessaire;
 
-- Les programmes seront compilés et évalués avec les options suivant `-Wall -Werrorvla -pedantic -std=c11`;
+- Les programmes seront compilés et évalués avec les options suivant `-Wall -Werror=vla -pedantic -std=c11`;
 
 ### Complément
 
@@ -197,7 +212,7 @@ pour traquer certaines erreurs et les mauvaises pratiques de programmation.
   Votre projet doit contenir un fichier nommé `README.md` qui décrit le contenu et qui **respecte le
   format Markdown**. Il doit minimalement contenir les informations ci-bas :
   
-  Ajouter un badge à votre `README.md`.  Le badge sera en mis à jour par votre fichier `YAML`;
+  Les badges ajoutés à votre `README.md` seront en mis à jour par votre fichier `YAML`;
 
 ~~~~
    # Travail pratique X
@@ -252,7 +267,10 @@ pour traquer certaines erreurs et les mauvaises pratiques de programmation.
   Votre projet devrait minimalement contenir, à la racine du dépôt, les fichiers de type `Unix/Linux` et `ascii` suivants :
 
 - Un fichier `tp3.c` contenant votre fonction `main`;
-- Les fichiers `malib.c` et `malib.h`;
+- Les fichiers `malib.c` et `malib.h`; 
+> > - Les fichiers `outil3.h` et `outil3.c` (ajout pour bien modulariser);
+> > - Un fichier YAML de test de compilation test-c.yml;
+> > - Un fichier YAML de test fonctionnel test-f.yml; 
 - Un fichier `README.md` selon le format proposé;
 - Un fichier nommé `Makefile` complet et optimal;
 - Un fichier nommé `cp.txt` avec votre code permanent en majuscule;
@@ -267,15 +285,18 @@ pour traquer certaines erreurs et les mauvaises pratiques de programmation.
 
 | Critère | Sous-critère | Points |
 | ------- |:------------ | ------:|
-| Exigences         |                                                | 5.0   |
-| Compilation       |                                                | 2.0   |
-| Makefile          |                                                | 2.0   |
-| Fonctionnabilité  | tests seront lancés (comparaison binaire)      | 7.0   |
-| Branche (git)     | nommée tp3 dev, branche défaut (main) vide     | 2.0   |
-| Issues (git)      | intervention                                   | 1.0   |
-| Optimal (git)     | clean                                          | 1.0   |
-| Bonus             | à venir                                        | 1.0   |
-| **Total**         |                                                | 21/20 |
+| Exigences         | outil3.c, malib.c, ...                                 | 4.0   |
+| Compilation       |                                                        | 1.0   |
+| Makefile          | plusieurs critères seront évalués                      | 1.0   |
+| test-c.yml        | produire le résultat dans compilation.md               | 1.0   |
+| test-f.yml        | résultat de tests dans fonctionnel.md                  | 1.0   |
+| badges yaml       | mettre les deux badges dans README.md                  | 2.0   |
+| Fonctionnabilité  | tests seront lancés (comparaison binaire)                 | 7.0   |
+| Branche (git)     | nommée tp3 (pour votre dev), branche défaut (main) vide   | 1.0   |
+| Optimal (git)     | on vise un dépôt parfait                                  | 1.0   |
+| performance       | performance (bien)                                        | 1.0   |
+| Bonus             | performance (optimal)                                     | 1.0   |
+| **Total**         |                                                           | 21/20 |
 
 FIN.
 ---

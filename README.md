@@ -94,6 +94,15 @@ Merci, bonne session à tous.
 Guy Francoeur
 
 
+```
+“L'enseignement devrait être ainsi : celui qui le reçoit le recueille comme un don inestimable 
+mais jamais comme une contrainte pénible.” -Albert Einstein
+
+“Une personne qui n'a jamais commis d'erreurs n'a jamais tenté d'innover.” -Albert Einstein
+
+“C'est le rôle essentiel du professeur d'éveiller la joie de travailler et de connaître.” -Albert Einstein
+```
+
 #### Référence: 
 
 Ce cours est basé sur les travaux d'Alexandre Blondin Massé, Professeur, que je remercie pour sa générosité et sa collaboration.
@@ -105,6 +114,7 @@ Ce cours est basé sur les travaux d'Alexandre Blondin Massé, Professeur, que j
 + [GNU make](https://www.gnu.org/software/make/manual/html_node/)
 + [cplusplus.com REFERENCE](http://www.cplusplus.com/reference/ "cplusplus.com REFERENCE")
 + [The linux command line](http://www.linuxcommand.org/tlcl.php "The linux command line")
++ [Learn GitHub Actions](https://docs.github.com/en/free-pro-team@latest/actions/learn-github-actions)
 + [101 commandes indispensables sous linux](https://buzut.fr/101-commandes-indispensables-sous-linux/ "101 commandes indispensables sous linux")
 + [Optimizing software in C++](https://www.agner.org/optimize/optimizing_cpp.pdf "référence pour le C++, niveau expert")
 + [astyle source code beautifier](https://sourceforge.net/projects/astyle/files/astyle/astyle%203.1/)
@@ -113,6 +123,10 @@ Ce cours est basé sur les travaux d'Alexandre Blondin Massé, Professeur, que j
 + [Aide académique à la réussite](https://info.uqam.ca/aide/)
 + [Espace disque et Quota](https://wiki.uqam.ca/display/SWSI/Labunix#Labunix-Espacedisque/Quota)
 + [clé putty ssh/rsa](https://devops.ionos.com/tutorials/use-ssh-keys-with-putty-on-windows/)
+
+#### Outils 🦊
++ [Bash online executor](https://www.tutorialspoint.com/execute_bash_online.php)
++ [C online compiler](https://www.onlinegdb.com/online_c_compiler)
 
 ----
 
