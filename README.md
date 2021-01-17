@@ -16,10 +16,11 @@
  Travail 2    | 20%   | 22 novembre 2020 23h59 HE (Québec)
  Travail 3    | 20%   | 20 décembre 2020 23h59 HE (Québec)
 
-L'étudiant doit obtenir 50%+ dans les examens `et` 50%+ des les travaux afin réussir le cours. Dans le cas contraire l'échec sera attribué
+ - L'étudiant doit obtenir 50%+ dans les examens `et` 50%+ des les travaux afin réussir le cours. Dans le cas contraire l'échec sera attribué
 
-Les règlements concernant le plagiat seront strictement appliqués. 
-Pour plus de renseignements, consultez le site suivant : http://www.infosphere.uqam.ca/rediger-un-travail/eviter-plagiat
+#### Les règlements concernant le plagiat seront strictement appliqués. 
+
+- Pour plus de renseignements, consultez le site suivant : http://www.infosphere.uqam.ca/rediger-un-travail/eviter-plagiat
 
 ### Entente d'évaluation
  - L'entente d'évaluation est un document officiel qui contient les modalités d'évaluations retenues.
