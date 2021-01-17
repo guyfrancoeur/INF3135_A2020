@@ -8,7 +8,7 @@
 
 ### Dates importantes:
 
- Livrable      | Pondération | Date                                        
+ **Livrable**      | **Pondération** | **Date**                                        
  :------------- | :-----------: | :--------------------------------------------
  Examen intra | 25%   | 31 octobre 2020 09h30 HE (heure de Montréal)
  Examen final | 25%   | 19 décembre 2020 09h30 HE
