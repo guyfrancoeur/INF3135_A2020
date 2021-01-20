@@ -1,9 +1,9 @@
-# Atelier 01: Connexion ssh, Éditeurs, Markdown et Git
+# Atelier 01 : Connexion ssh, Éditeurs, Markdown et Git
 
 ----
 **Note** : (_facultatif_) S'il y a des questions dans ce labo, répondez y dans un fichier nommé
 `./labo/reponse-labo-XX.md`. `XX` étant le numéro de l'atelier. Le fichier doit être dans un format `Markdown`. 
-Utiliser un projet privé [Voir section 5](#5) nommé `inf3135-a2020` pour déposer le fichier demandé.
+Utiliser un projet privé [Voir section 5](#5) nommé [cours] `inf3135-a2020` pour déposer le fichier demandé.
 Utiliser le même format de fichier pour tous les exercices.
 
 ##### Format du fichier Markdown
@@ -355,3 +355,6 @@ $
 
 ##### Auteur Guy Francoeur :copyright: version A2020
 ###### basé sur les travaux d'Alexandre Blondin Massé, Professeur
+
+[cours]: inf3135-h2021
+[atelier]: Atelier 01
