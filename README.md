@@ -1,5 +1,7 @@
 # INF3135 A2020 UQAM
 
+Copyright :copyright: Guy Francoeur
+
 ## Construction et maintenance de logiciels
 
 ### Matériel du cours INF3135 édition A2020
