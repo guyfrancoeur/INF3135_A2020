@@ -1,6 +1,6 @@
 # INF3135 A2020 UQAM
 
-Copyright :copyright: Guy Francoeur
+Copyright :copyright: Guy Francoeur :copyright:
 
 ## Construction et maintenance de logiciels
 
